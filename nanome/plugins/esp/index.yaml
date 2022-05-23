@@ -2,13 +2,12 @@ apiVersion: v1
 entries:
   lib:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-05-23T16:22:26.155029142-04:00"
+    created: "2022-05-23T18:24:31.959578781-04:00"
     description: A Helm chart for Kubernetes
-    digest: bc4d2f8ab2c56720dc5290c37ed04fc860c7910a5a8e8d3a9b13e36ccc5f66ce
+    digest: d9101460674ed3617e9ced5e059a81a1dec5e9cf4f435bf12ec10e9062d53812
     name: lib
     type: library
     urls:
-    - charts/lib-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-05-23T16:22:26.154755232-04:00"
+    - charts/lib-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-05-23T18:24:31.959312475-04:00"

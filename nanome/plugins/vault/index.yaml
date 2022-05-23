@@ -3,7 +3,7 @@ entries:
   lib:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-23T16:22:26.560063789-04:00"
+    created: "2022-05-23T18:25:03.978767329-04:00"
     description: A Helm chart for Kubernetes
     digest: dbd34f2c84bb2a8909ef7866146cf8354c16cbb7016046a404f9424fe2f1e70b
     name: lib
@@ -11,4 +11,4 @@ entries:
     urls:
     - charts/lib-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-23T16:22:26.559638865-04:00"
+generated: "2022-05-23T18:25:03.978423511-04:00"
