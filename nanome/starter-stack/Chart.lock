@@ -1,42 +1,42 @@
 dependencies:
 - name: chemical-interactions
   repository: file://../plugins/chemical-interactions
-  version: 0.1.0
+  version: 0.2.0
 - name: hydrogens
   repository: file://../plugins/hydrogens
-  version: 0.1.0
+  version: 0.2.0
 - name: chemical-preview
   repository: file://../plugins/chemical-preview
-  version: 0.1.0
+  version: 0.2.0
 - name: coordinate-align
   repository: file://../plugins/coordinate-align
-  version: 0.1.0
+  version: 0.2.0
 - name: data-table
   repository: file://../plugins/data-table
-  version: 0.1.0
+  version: 0.2.0
 - name: docking-smina
   repository: file://../plugins/docking-smina
-  version: 0.1.0
+  version: 0.2.0
 - name: esp
   repository: file://../plugins/esp
-  version: 0.1.0
+  version: 0.2.0
 - name: minimization
   repository: file://../plugins/minimization
-  version: 0.1.0
+  version: 0.2.0
 - name: realtime-scoring
   repository: file://../plugins/realtime-scoring
-  version: 0.1.0
+  version: 0.2.0
 - name: rmsd
   repository: file://../plugins/rmsd
-  version: 0.1.0
+  version: 0.2.0
 - name: structure-prep
   repository: file://../plugins/structure-prep
-  version: 0.1.0
+  version: 0.2.0
 - name: merge-as-frames
   repository: file://../plugins/merge-as-frames
-  version: 0.1.0
+  version: 0.2.0
 - name: smiles-loader
   repository: file://../plugins/smiles-loader
-  version: 0.1.0
-digest: sha256:974cc78072c30cbefe921eae8a5c452f880c4aa548d85819b159156e6dac313b
-generated: "2022-05-23T14:04:43.573848866-04:00"
+  version: 0.2.0
+digest: sha256:85108ba6f89a036988d8adc5e006c84010e4f8c17d703439745658156b80c9a7
+generated: "2022-05-23T18:07:29.077808597-04:00"

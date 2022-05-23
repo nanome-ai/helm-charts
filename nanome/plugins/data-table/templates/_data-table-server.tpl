@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: data-table-server
-        image: {{.values.image}}{{.values.tag}}
+        image: {{.values.image}}{{.chart.AppVersion}}
         ports:
         - containerPort: 80
         - containerPort: 443

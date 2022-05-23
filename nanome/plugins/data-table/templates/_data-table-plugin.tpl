@@ -1,7 +1,7 @@
 {{- define "data-table-plugin.deployment.tpl" }}
 {{- $plugin_name := .values.PLUGIN_NAME | default "" -}}
 {{- $plugin_image := .values.image -}}
-{{- $plugin_tag := .values.tag -}}
+{{- $plugin_tag := .chart.AppVersion -}}
 {{- $chart_name := .chart.Name -}}
 {{- $global := .global -}}
 

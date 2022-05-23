@@ -1,31 +1,31 @@
 {{- define "cookbook.plugin_deployment.tpl" }}
 {{- $plugin_image := .values.image -}}
-{{- $plugin_tag := .values.tag -}}
+{{- $plugin_tag := .chart.AppVersion -}}
 
-{{- $plugin_class := .values.plugin_class -}}
+{{- $chart_name := .chart.Name -}}
 {{- $plugin_name := .values.PLUGIN_NAME -}}
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ $plugin_class }}-{{ .release.Name }}
+  name: {{ $chart_name }}-{{ .release.Name }}
   labels:
-    app: {{ $plugin_class }}
+    app: {{ $chart_name }}
     release: {{ .release.Name }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ $plugin_class }}-{{ .release.Name }}
+      app: {{ $chart_name }}-{{ .release.Name }}
       release: {{ .release.Name }}
   template:
     metadata:
       labels:
-        app: {{ $plugin_class }}-{{ .release.Name }}
+        app: {{ $chart_name }}-{{ .release.Name }}
         release: {{ .release.Name }}
     spec:
       containers:
-      - name: {{ $plugin_class }}
+      - name: {{ $chart_name }}
         image: {{ $plugin_image }}:{{ $plugin_tag }}
         ports:
         - containerPort: {{ .values.NTS_PORT}}
