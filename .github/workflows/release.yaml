@@ -24,7 +24,14 @@ jobs:
         with:
           version: v3.8.1
 
-      - name: Run chart-releaser
+      - name: Release Plugins
+        uses: helm/chart-releaser-action@v1.4.0
+        with:
+          charts_dir: nanome/plugins
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      
+      - name: Release Stacks
         uses: helm/chart-releaser-action@v1.4.0
         with:
           charts_dir: nanome
