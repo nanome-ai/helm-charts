@@ -1,0 +1,68 @@
+apiVersion: v2
+name: starter-stack
+description: A Helm chart for Kubernetes
+
+# A chart can be either an 'application' or a 'library' chart.
+#
+# Application charts are a collection of templates that can be packaged into versioned archives
+# to be deployed.
+#
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 0.1.0
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application. Versions are not expected to
+# follow Semantic Versioning. They should reflect the version the application is using.
+# It is recommended to use it with quotes.
+appVersion: "1.16.0"
+
+dependencies:
+  - name: chemical-interactions
+    version: 0.1.0
+    repository: file://../plugins/chemical-interactions
+  - name: hydrogens
+    version: 0.1.0
+    repository: file://../plugins/hydrogens
+  - name: chemical-preview
+    version: 0.1.0
+    repository: file://../plugins/chemical-preview
+  - name: coordinate-align
+    version: 0.1.0
+    repository: file://../plugins/coordinate-align
+  - name: data-table
+    version: 0.1.0
+    repository: file://../plugins/data-table
+  - name: docking-smina
+    version: 0.1.0
+    repository: file://../plugins/docking-smina
+  - name: esp
+    version: 0.1.0
+    repository: file://../plugins/esp
+  - name: minimization
+    version: 0.1.0
+    repository: file://../plugins/minimization
+  - name: realtime-scoring
+    version: 0.1.0
+    repository: file://../plugins/realtime-scoring
+  - name: rmsd
+    version: 0.1.0
+    repository: file://../plugins/rmsd
+  - name: structure-prep
+    version: 0.1.0
+    repository: file://../plugins/structure-prep
+  - name: merge-as-frames
+    version: 0.1.0
+    repository: file://../plugins/merge-as-frames
+  - name: smiles-loader
+    version: 0.1.0
+    repository: file://../plugins/smiles-loader
+  # - name: vault
+  #   version: 0.1.0
+  #   repository: file://../plugins/vault

@@ -1,0 +1,2 @@
+{{ $plugin_data := dict "values" $.Values.vault_plugin "global" $.Values.global "release" $.Release "chart" $.Chart }}
+{{- include "vault-plugin.deployment.tpl" $plugin_data }}

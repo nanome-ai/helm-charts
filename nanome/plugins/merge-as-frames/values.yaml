@@ -1,0 +1,10 @@
+image: public.ecr.aws/h7r1e4h2/merge-as-frames
+tag: latest
+
+global:
+  NTS_HOST:
+  NTS_PORT:
+  NTS_KEY:
+  PLUGIN_VERBOSE:
+  PLUGIN_WRITE_LOG_FILE: True
+  PLUGIN_REMOTE_LOGGING: False
