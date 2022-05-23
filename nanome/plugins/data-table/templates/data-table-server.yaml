@@ -1,2 +1,2 @@
-{{ $server_data := dict "values" $.Values.data_table_server "release" $.Release }}
+{{ $server_data := dict "values" $.Values.data_table_server "release" $.Release "chart" $.Chart }}
 {{- include "data-table-server.tpl" $server_data }}

@@ -18,7 +18,7 @@ type: application
 version: 0.2.0
 
 # This is the version number of the application being deployed.
-# Will be used as the image tag to retrieve ECR image.
+# Will be used as tag to retrieve ECR image.
 # It is recommended to use it with quotes.
 appVersion: "1.2.0"
 
