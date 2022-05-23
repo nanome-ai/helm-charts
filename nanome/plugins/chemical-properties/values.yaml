@@ -1,5 +1,4 @@
 image: public.ecr.aws/h7r1e4h2/chemical-properties
-tag: latest
 
 global:
   NTS_HOST:
