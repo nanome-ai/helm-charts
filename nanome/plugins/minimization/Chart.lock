@@ -1,0 +1,6 @@
+dependencies:
+- name: lib
+  repository: file://../lib/
+  version: 0.1.0
+digest: sha256:c0438b61da96ed815a36b130ec6f88a235dd656ae8dae80a40068a73b02987d1
+generated: "2022-05-23T16:45:50.959200242-04:00"
