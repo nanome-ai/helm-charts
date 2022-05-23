@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: {{ $chart_name | lower }}
-        image: {{ $plugin_image }}
+        image: {{ $plugin_image }}:{{ $plugin_tag }}
         ports:
         - containerPort: {{ $global.NTS_PORT }}
         env:

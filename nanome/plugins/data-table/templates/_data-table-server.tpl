@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: data-table-server
-        image: public.ecr.aws/h7r1e4h2/data-table-server
+        image: {{.values.image}}{{.values.tag}}
         ports:
         - containerPort: 80
         - containerPort: 443

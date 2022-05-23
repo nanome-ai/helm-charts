@@ -10,8 +10,10 @@ global:
 
 data_table_plugin:
   image: public.ecr.aws/h7r1e4h2/data-table:latest
+  tag: latest
   server_url: *SERVER_URL
 
 data_table_server:
-  image: public.ecr.aws/h7r1e4h2/data-table-server:latest
+  image: public.ecr.aws/h7r1e4h2/data-table-server
+  tag: latest
   server_url: *SERVER_URL
