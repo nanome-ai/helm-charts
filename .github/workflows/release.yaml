@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     branches:
-      - master
+      - fix-release
 
 jobs:
   release:
@@ -27,13 +27,13 @@ jobs:
       - name: Release Lib
         uses: helm/chart-releaser-action@v1.4.0
         with:
-          charts_dir: nanome/plugins/lib
+          charts_dir: nanome/plugins
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
-      - name: Release Stacks
-        uses: helm/chart-releaser-action@v1.4.0
-        with:
-          charts_dir: nanome/starter-stack
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+      # - name: Release Stacks
+      #   uses: helm/chart-releaser-action@v1.4.0
+      #   with:
+      #     charts_dir: nanome/starter-stack
+      #   env:
+      #     CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
