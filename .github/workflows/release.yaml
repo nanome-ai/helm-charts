@@ -27,7 +27,7 @@ jobs:
       - name: Release Lib
         uses: helm/chart-releaser-action@v1.4.0
         with:
-          charts_dir: nanome/plugins
+          charts_dir: nanome/plugins/lib
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
