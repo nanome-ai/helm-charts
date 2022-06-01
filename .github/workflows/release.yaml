@@ -31,6 +31,8 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: Release Charts
+        env:
+          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
         run: |
           charts_dir=charts
           charts_repo_url=https://nanome-ai.github.io/helm-charts
