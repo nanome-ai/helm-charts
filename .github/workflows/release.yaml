@@ -19,7 +19,6 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           helm repo add nanome https://nanome-ai.github.io/helm-charts
-
       - name: Install Helm
         uses: azure/setup-helm@v1
         with:
@@ -28,7 +27,7 @@ jobs:
       - name: Install CR tool
         uses: helm/chart-releaser-action@v1.4.0
         with:
-          - install_only: True
+          install_only: true
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       # - name: Release Charts
