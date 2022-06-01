@@ -27,7 +27,7 @@ jobs:
       - name: Release Starter Stack
         uses: helm/chart-releaser-action@v1.4.0
         with:
-          charts_dir: nanome/plugins
+          charts_dir: nanome/starter-stack
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 

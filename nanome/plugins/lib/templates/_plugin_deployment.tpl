@@ -1,6 +1,6 @@
 {{- define "lib.plugin_deployment.tpl" }}
 {{- $plugin_image := .values.image -}}
-{{- $plugin_tag := $.chart.AppVersion -}}
+{{- $plugin_tag :=  .values.tag | default $.chart.AppVersion -}}
 
 {{- $chart_name := $.chart.Name -}}
 {{- $plugin_name := .values.PLUGIN_NAME | default "" -}}
