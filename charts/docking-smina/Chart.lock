@@ -1,6 +1,6 @@
 dependencies:
 - name: lib
-  repository: file://../lib/
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 digest: sha256:cd5aa7a090affc801617277f67bf5359a1fd11f88a3de6d0f2d9f79f499e720f
 generated: "2022-05-23T18:24:20.224713461-04:00"
