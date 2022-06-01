@@ -214,6 +214,58 @@ entries:
     version: 0.2.0
   starter-stack:
   - apiVersion: v2
+    created: "2022-06-01T19:12:35.612801604Z"
+    dependencies:
+    - name: chemical-interactions
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.3.0
+    - name: hydrogens
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: chemical-preview
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.3.0
+    - name: coordinate-align
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: data-table
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: docking-smina
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: esp
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: minimization
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: realtime-scoring
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: rmsd
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: structure-prep
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: merge-as-frames
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: smiles-loader
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.2.0
+    - name: vault
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 37b4c93e394fdb6b96cd040be0208c5daf6825fcbbc2a78f9b1bc45446af6e77
+    name: starter-stack
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/starter-stack-0.5.0/starter-stack-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     created: "2022-06-01T18:10:20.082118833Z"
     dependencies:
     - name: chemical-interactions
@@ -319,4 +371,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-01T18:10:20.082128832Z"
+generated: "2022-06-01T19:12:35.612930007Z"
