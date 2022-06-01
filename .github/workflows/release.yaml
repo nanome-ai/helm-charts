@@ -18,22 +18,14 @@ jobs:
         run: |
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          helm repo add nanome https://nanome-ai.github.io/helm-charts
 
       - name: Install Helm
         uses: azure/setup-helm@v1
         with:
           version: v3.8.1
 
-      - name: Release Lib
+      - name: Release Helm Charts
         uses: helm/chart-releaser-action@v1.4.0
-        with:
-          charts_dir: nanome/plugins/lib
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Release Stacks
-        uses: helm/chart-releaser-action@v1.4.0
-        with:
-          charts_dir: nanome/starter-stack
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
