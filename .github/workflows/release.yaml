@@ -57,5 +57,6 @@ jobs:
               args+=(--install-only "${{ inputs.install_only }}")
           fi
           "./cr.sh" "${args[@]}"
+        shell: bash
 
           
