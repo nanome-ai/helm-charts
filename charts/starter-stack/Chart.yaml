@@ -20,43 +20,43 @@ version: 0.4.0
 dependencies:
   - name: chemical-interactions
     version: 0.3.0
-    repository: file://../chemical-interactions
+    repository: https://nanome-ai.github.io/helm-charts
   - name: hydrogens
     version: 0.2.0
-    repository: file://../hydrogens
+    repository: https://nanome-ai.github.io/helm-charts
   - name: chemical-preview
     version: 0.3.0
-    repository: file://../chemical-preview
+    repository: https://nanome-ai.github.io/helm-charts
   - name: coordinate-align
     version: 0.2.0
-    repository: file://../coordinate-align
+    repository: https://nanome-ai.github.io/helm-charts
   - name: data-table
     version: 0.2.0
-    repository: file://../data-table
+    repository: https://nanome-ai.github.io/helm-charts
   - name: docking-smina
     version: 0.2.0
-    repository: file://../docking-smina
+    repository: https://nanome-ai.github.io/helm-charts
   - name: esp
     version: 0.2.0
-    repository: file://../esp
+    repository: https://nanome-ai.github.io/helm-charts
   - name: minimization
     version: 0.2.0
-    repository: file://../minimization
+    repository: https://nanome-ai.github.io/helm-charts
   - name: realtime-scoring
     version: 0.2.0
-    repository: file://../realtime-scoring
+    repository: https://nanome-ai.github.io/helm-charts
   - name: rmsd
     version: 0.2.0
-    repository: file://../rmsd
+    repository: https://nanome-ai.github.io/helm-charts
   - name: structure-prep
     version: 0.2.0
-    repository: file://../structure-prep
+    repository: https://nanome-ai.github.io/helm-charts
   - name: merge-as-frames
     version: 0.2.0
-    repository: file://../merge-as-frames
+    repository: https://nanome-ai.github.io/helm-charts
   - name: smiles-loader
     version: 0.2.0
-    repository: file://../smiles-loader
+    repository: https://nanome-ai.github.io/helm-charts
   - name: vault
     version: 0.1.0
-    repository: file://../vault
+    repository: https://nanome-ai.github.io/helm-charts

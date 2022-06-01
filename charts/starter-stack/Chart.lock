@@ -1,45 +1,45 @@
 dependencies:
 - name: chemical-interactions
-  repository: file://../chemical-interactions
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.3.0
 - name: hydrogens
-  repository: file://../hydrogens
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: chemical-preview
-  repository: file://../chemical-preview
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.3.0
 - name: coordinate-align
-  repository: file://../coordinate-align
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: data-table
-  repository: file://../data-table
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: docking-smina
-  repository: file://../docking-smina
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: esp
-  repository: file://../esp
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: minimization
-  repository: file://../minimization
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: realtime-scoring
-  repository: file://../realtime-scoring
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: rmsd
-  repository: file://../rmsd
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: structure-prep
-  repository: file://../structure-prep
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: merge-as-frames
-  repository: file://../merge-as-frames
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: smiles-loader
-  repository: file://../smiles-loader
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.2.0
 - name: vault
-  repository: file://../vault
+  repository: https://nanome-ai.github.io/helm-charts
   version: 0.1.0
-digest: sha256:40e7c51e4de9f58694701d9a4444cfccc0f2f90432a299820217ac97806f4e23
-generated: "2022-06-01T14:09:39.261054446-04:00"
+digest: sha256:9514511a9a4a6dd192d01048da5b872183cd303eaa3ebb8238291a598a48edba
+generated: "2022-06-01T14:14:01.734172481-04:00"
