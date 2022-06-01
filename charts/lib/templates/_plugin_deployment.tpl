@@ -27,8 +27,6 @@ spec:
       containers:
       - name: {{ $chart_name }}
         image: {{ $plugin_image }}:{{ $plugin_tag }}
-        ports:
-        - containerPort: {{ .values.global.NTS_PORT}}
         env:
         - name: NTS_HOST
           value: "{{ .values.global.NTS_HOST }}"
