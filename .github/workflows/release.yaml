@@ -61,6 +61,7 @@ jobs:
           if [[ -n "${{ inputs.install_only }}" ]]; then
               args+=(--install-only "${{ inputs.install_only }}")
           fi
+          echo ${args[@]}
           "./cr.sh" "${args[@]}"
         shell: bash
 
