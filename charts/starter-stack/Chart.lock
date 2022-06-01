@@ -1,6 +1,45 @@
 dependencies:
-- name: lib
-  repository: file://../lib/
+- name: chemical-interactions
+  repository: file://../chemical-interactions
+  version: 0.3.0
+- name: hydrogens
+  repository: file://../hydrogens
   version: 0.2.0
-digest: sha256:cd5aa7a090affc801617277f67bf5359a1fd11f88a3de6d0f2d9f79f499e720f
-generated: "2022-06-01T13:58:06.101482079-04:00"
+- name: chemical-preview
+  repository: file://../chemical-preview
+  version: 0.3.0
+- name: coordinate-align
+  repository: file://../coordinate-align
+  version: 0.2.0
+- name: data-table
+  repository: file://../data-table
+  version: 0.2.0
+- name: docking-smina
+  repository: file://../docking-smina
+  version: 0.2.0
+- name: esp
+  repository: file://../esp
+  version: 0.2.0
+- name: minimization
+  repository: file://../minimization
+  version: 0.2.0
+- name: realtime-scoring
+  repository: file://../realtime-scoring
+  version: 0.2.0
+- name: rmsd
+  repository: file://../rmsd
+  version: 0.2.0
+- name: structure-prep
+  repository: file://../structure-prep
+  version: 0.2.0
+- name: merge-as-frames
+  repository: file://../merge-as-frames
+  version: 0.2.0
+- name: smiles-loader
+  repository: file://../smiles-loader
+  version: 0.2.0
+- name: vault
+  repository: file://../vault
+  version: 0.1.0
+digest: sha256:40e7c51e4de9f58694701d9a4444cfccc0f2f90432a299820217ac97806f4e23
+generated: "2022-06-01T14:09:39.261054446-04:00"
