@@ -33,12 +33,14 @@ jobs:
       - name: Release Charts
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          GITHUB_REPOSITORY: ${{ github.repository }}
+          # GITHUB_REPOSITORY: ${{ github.repository }}
+
         run: |
+          echo GIT REPOSITORY = ${{ github.repository }}
           charts_dir=charts
           charts_repo_url=https://nanome-ai.github.io/helm-charts
-          owner=$(cut -d '/' -f 1 <<< "$GITHUB_REPOSITORY")
-          repo=$(cut -d '/' -f 2 <<< "$GITHUB_REPOSITORY")
+          owner=$(cut -d '/' -f 1 <<< "${{ github.repository }}")
+          repo=$(cut -d '/' -f 2 <<< "${{ github.repository }}")
           args=(--owner "$owner" --repo "$repo")
           args+=(--charts-dir "$charts_dir")
           if [[ -n "${{ inputs.version }}" ]]; then
