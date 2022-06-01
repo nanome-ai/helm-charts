@@ -214,6 +214,58 @@ entries:
     version: 0.2.0
   starter-stack:
   - apiVersion: v2
+    created: "2022-06-01T18:10:20.082118833Z"
+    dependencies:
+    - name: chemical-interactions
+      repository: file://../chemical-interactions
+      version: 0.3.0
+    - name: hydrogens
+      repository: file://../hydrogens
+      version: 0.2.0
+    - name: chemical-preview
+      repository: file://../chemical-preview
+      version: 0.3.0
+    - name: coordinate-align
+      repository: file://../coordinate-align
+      version: 0.2.0
+    - name: data-table
+      repository: file://../data-table
+      version: 0.2.0
+    - name: docking-smina
+      repository: file://../docking-smina
+      version: 0.2.0
+    - name: esp
+      repository: file://../esp
+      version: 0.2.0
+    - name: minimization
+      repository: file://../minimization
+      version: 0.2.0
+    - name: realtime-scoring
+      repository: file://../realtime-scoring
+      version: 0.2.0
+    - name: rmsd
+      repository: file://../rmsd
+      version: 0.2.0
+    - name: structure-prep
+      repository: file://../structure-prep
+      version: 0.2.0
+    - name: merge-as-frames
+      repository: file://../merge-as-frames
+      version: 0.2.0
+    - name: smiles-loader
+      repository: file://../smiles-loader
+      version: 0.2.0
+    - name: vault
+      repository: file://../vault
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: c7d143010394d815f79eda9f1f84fe9bfa5e2d1a95872d16854cff48bf68bdab
+    name: starter-stack
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/starter-stack-0.4.0/starter-stack-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
     created: "2022-06-01T17:58:57.720777343Z"
     dependencies:
     - name: lib
@@ -267,4 +319,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-01T17:58:58.118631009Z"
+generated: "2022-06-01T18:10:20.082128832Z"
