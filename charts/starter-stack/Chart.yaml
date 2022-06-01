@@ -20,43 +20,43 @@ version: 0.4.0
 dependencies:
   - name: chemical-interactions
     version: 0.2.0
-    repository: file://../plugins/chemical-interactions
+    repository: file://../chemical-interactions
   - name: hydrogens
     version: 0.2.0
-    repository: file://../plugins/hydrogens
+    repository: file://../hydrogens
   - name: chemical-preview
     version: 0.3.0
-    repository: file://../plugins/chemical-preview
+    repository: file://../chemical-preview
   - name: coordinate-align
     version: 0.2.0
-    repository: file://../plugins/coordinate-align
+    repository: file://../coordinate-align
   - name: data-table
     version: 0.2.0
-    repository: file://../plugins/data-table
+    repository: file://../data-table
   - name: docking-smina
     version: 0.2.0
-    repository: file://../plugins/docking-smina
+    repository: file://../docking-smina
   - name: esp
     version: 0.2.0
-    repository: file://../plugins/esp
+    repository: file://../esp
   - name: minimization
     version: 0.2.0
-    repository: file://../plugins/minimization
+    repository: file://../minimization
   - name: realtime-scoring
     version: 0.2.0
-    repository: file://../plugins/realtime-scoring
+    repository: file://../realtime-scoring
   - name: rmsd
     version: 0.2.0
-    repository: file://../plugins/rmsd
+    repository: file://../rmsd
   - name: structure-prep
     version: 0.2.0
-    repository: file://../plugins/structure-prep
+    repository: file://../structure-prep
   - name: merge-as-frames
     version: 0.2.0
-    repository: file://../plugins/merge-as-frames
+    repository: file://../merge-as-frames
   - name: smiles-loader
     version: 0.2.0
-    repository: file://../plugins/smiles-loader
+    repository: file://../smiles-loader
   - name: vault
     version: 0.2.0
-    repository: file://../plugins/vault
+    repository: file://../vault
