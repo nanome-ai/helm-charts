@@ -274,7 +274,9 @@ release_charts() {
     fi
 
     echo 'Releasing charts...'
-    cr upload "${args[@]}"
+    for arg in "${args[@]}"; do
+        cr upload "${args}"
+    done
 }
 
 update_index() {
