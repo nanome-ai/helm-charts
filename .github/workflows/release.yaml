@@ -32,18 +32,20 @@ jobs:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
       - name: Release Charts
         run: |
+          charts_dir=charts
+          charts_repo_url=https://nanome-ai.github.io/helm-charts
           owner=$(cut -d '/' -f 1 <<< "$GITHUB_REPOSITORY")
           repo=$(cut -d '/' -f 2 <<< "$GITHUB_REPOSITORY")
           args=(--owner "$owner" --repo "$repo")
-          args+=(--charts-dir "${{ inputs.charts_dir }}")
+          args+=(--charts-dir "${charts_dir}")
           if [[ -n "${{ inputs.version }}" ]]; then
               args+=(--version "${{ inputs.version }}")
           fi
           if [[ -n "${{ inputs.config }}" ]]; then
               args+=(--config "${{ inputs.config }}")
           fi
-          if [[ -n "${{ inputs.charts_repo_url }}" ]]; then
-              args+=(--charts-repo-url "${{ inputs.charts_repo_url }}")
+          if [[ -n "${{charts_repo_url}" ]]; then
+              args+=(--charts-repo-url "${charts_repo_url }")
           fi
           if [[ -z "${{ inputs.install_dir }}" ]]; then
             install="$RUNNER_TOOL_CACHE/cr/${{ inputs.version }}/$(uname -m)"
