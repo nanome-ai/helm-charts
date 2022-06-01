@@ -15,51 +15,48 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.3.0
+version: 0.4.0
 
 dependencies:
-  - name: lib
+  - name: chemical-interactions
     version: 0.2.0
-    repository: file://../lib/
-  # - name: chemical-interactions
-  #   version: 0.2.0
-  #   repository: file://../plugins/chemical-interactions
-  # - name: hydrogens
-  #   version: 0.2.0
-  #   repository: file://../plugins/hydrogens
-  # - name: chemical-preview
-  #   version: 0.3.0
-  #   repository: file://../plugins/chemical-preview
-  # - name: coordinate-align
-  #   version: 0.2.0
-  #   repository: file://../plugins/coordinate-align
-  # - name: data-table
-  #   version: 0.2.0
-  #   repository: file://../plugins/data-table
-  # - name: docking-smina
-  #   version: 0.2.0
-  #   repository: file://../plugins/docking-smina
-  # - name: esp
-  #   version: 0.2.0
-  #   repository: file://../plugins/esp
-  # - name: minimization
-  #   version: 0.2.0
-  #   repository: file://../plugins/minimization
-  # - name: realtime-scoring
-  #   version: 0.2.0
-  #   repository: file://../plugins/realtime-scoring
-  # - name: rmsd
-  #   version: 0.2.0
-  #   repository: file://../plugins/rmsd
-  # - name: structure-prep
-  #   version: 0.2.0
-  #   repository: file://../plugins/structure-prep
-  # - name: merge-as-frames
-  #   version: 0.2.0
-  #   repository: file://../plugins/merge-as-frames
-  # - name: smiles-loader
-  #   version: 0.2.0
-  #   repository: file://../plugins/smiles-loader
-  # - name: vault
-  #   version: 0.2.0
-  #   repository: file://../plugins/vault
+    repository: file://../plugins/chemical-interactions
+  - name: hydrogens
+    version: 0.2.0
+    repository: file://../plugins/hydrogens
+  - name: chemical-preview
+    version: 0.3.0
+    repository: file://../plugins/chemical-preview
+  - name: coordinate-align
+    version: 0.2.0
+    repository: file://../plugins/coordinate-align
+  - name: data-table
+    version: 0.2.0
+    repository: file://../plugins/data-table
+  - name: docking-smina
+    version: 0.2.0
+    repository: file://../plugins/docking-smina
+  - name: esp
+    version: 0.2.0
+    repository: file://../plugins/esp
+  - name: minimization
+    version: 0.2.0
+    repository: file://../plugins/minimization
+  - name: realtime-scoring
+    version: 0.2.0
+    repository: file://../plugins/realtime-scoring
+  - name: rmsd
+    version: 0.2.0
+    repository: file://../plugins/rmsd
+  - name: structure-prep
+    version: 0.2.0
+    repository: file://../plugins/structure-prep
+  - name: merge-as-frames
+    version: 0.2.0
+    repository: file://../plugins/merge-as-frames
+  - name: smiles-loader
+    version: 0.2.0
+    repository: file://../plugins/smiles-loader
+  - name: vault
+    version: 0.2.0
+    repository: file://../plugins/vault
