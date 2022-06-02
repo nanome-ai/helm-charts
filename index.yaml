@@ -3,6 +3,20 @@ entries:
   chemical-interactions:
   - apiVersion: v2
     appVersion: 1.2.0
+    created: "2022-06-02T15:45:26.896873785Z"
+    dependencies:
+    - name: lib
+      repository: https://nanome-ai.github.io/helm-charts
+      version: 0.3.0
+    description: A Helm chart for Kubernetes
+    digest: 280c25823912fef06ac6fefdf1e7c26810d4d5fbadd32b6e5aa8485e21bd18f5
+    name: chemical-interactions
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/chemical-interactions-0.5.0/chemical-interactions-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
+    appVersion: 1.2.0
     created: "2022-06-02T15:27:21.859585523Z"
     dependencies:
     - name: lib
@@ -586,4 +600,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-02T15:27:25.385750672Z"
+generated: "2022-06-02T15:45:31.082310258Z"
