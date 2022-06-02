@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - release-iteration
-
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -13,7 +12,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
       - name: Configure Git
         run: |
           git config user.name "$GITHUB_ACTOR"
@@ -23,45 +21,8 @@ jobs:
         uses: azure/setup-helm@v1
         with:
           version: v3.8.1
-
-      - name: Install CR tool
+      - name: Release Helm Charts
         uses: helm/chart-releaser-action@v1.4.0
-        with:
-          install_only: true
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Release Charts
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-
-        run: |
-          charts_dir=charts
-          charts_repo_url=https://nanome-ai.github.io/helm-charts
-          owner=nanome-ai
-          repo=helm-charts
-          args=(--owner "$owner" --repo "$repo")
-          args+=(--charts-dir "$charts_dir")
-          if [[ -n "${{ inputs.version }}" ]]; then
-              args+=(--version "${{ inputs.version }}")
-          fi
-          if [[ -n "${{ inputs.config }}" ]]; then
-              args+=(--config "${{ inputs.config }}")
-          fi
-          if [[ -n "$charts_repo_url" ]]; then
-              args+=(--charts-repo-url "$charts_repo_url")
-          fi
-          if [[ -z "${{ inputs.install_dir }}" ]]; then
-            install="$RUNNER_TOOL_CACHE/cr/${{ inputs.version }}/$(uname -m)"
-            echo "$install" >> "$GITHUB_PATH"
-            args+=(--install-dir "$install")
-          else
-            echo ${{ inputs.install_dir }} >> "$GITHUB_PATH"
-            args+=(--install-dir "${{ inputs.install_dir }}")
-          fi
-          if [[ -n "${{ inputs.install_only }}" ]]; then
-              args+=(--install-only "${{ inputs.install_only }}")
-          fi
-          "./cr.sh" "${args[@]}"
-        shell: bash
-
-          
+          CR_SKIP_EXISTING: true
