@@ -832,49 +832,6 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/structure-prep-0.2.0/structure-prep-0.2.0.tgz
     version: 0.2.0
-  superimpose:
-  - apiVersion: v2
-    appVersion: 0.4.11
-    created: "2022-06-02T15:56:33.501518875Z"
-    dependencies:
-    - name: lib
-      repository: https://nanome-ai.github.io/helm-charts
-      version: 0.3.0
-    description: A Helm chart for Kubernetes
-    digest: f587f376602422742ac77b73e8cfa1f2be5b6722cd20d583def181f35c152e31
-    name: superimpose
-    type: application
-    urls:
-    - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-0.3.1/superimpose-0.3.1.tgz
-    version: 0.3.1
-  - apiVersion: v2
-    appVersion: 0.4.11
-    created: "2022-06-02T15:27:25.209083927Z"
-    dependencies:
-    - name: lib
-      repository: https://nanome-ai.github.io/helm-charts
-      version: 0.2.0
-    description: A Helm chart for Kubernetes
-    digest: c3946885c087bc0a171b5adf333b2eb4e973e4f88126fc2a8d7c0b199c68dd38
-    name: superimpose
-    type: application
-    urls:
-    - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-0.3.0/superimpose-0.3.0.tgz
-    version: 0.3.0
-  - apiVersion: v2
-    appVersion: 0.4.11
-    created: "2022-06-01T17:58:57.987058033Z"
-    dependencies:
-    - name: lib
-      repository: file://../lib/
-      version: 0.2.0
-    description: A Helm chart for Kubernetes
-    digest: 3ac8f3c42f72345b5a2a8489b5d80158501f3f09af5569aeafc68b5e5a0f8aa5
-    name: superimpose
-    type: application
-    urls:
-    - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-0.2.0/superimpose-0.2.0.tgz
-    version: 0.2.0
   vault:
   - apiVersion: v2
     appVersion: latest
