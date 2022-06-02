@@ -14,6 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+"""
+Original Source
+https://github.com/helm/chart-releaser-action/blob/main/cr.sh
+
+Slightly modified to add --skip-existing flag to upload command
+"""
 set -o errexit
 set -o nounset
 set -o pipefail
