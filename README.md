@@ -5,12 +5,24 @@ Easily deploy nanome plugins to your Kubernetes cluster!
 ```sh
 helm repo add nanome https://nanome-ai.github.io/helm-charts/
 ```
-## Deploy Starter Stack
+## Deploy Starter Stack (Includes charts for all standard plugins)
 ```sh
-helm install --generate-name nanome/starter-stack
+helm install --generate-name nanome/starter-stack -f values.yaml
 ```
 
 ## Deploy an individual plugin
 ```sh
-helm install --generate-name nanome/chemical-interactions -v values.yaml
+helm install --generate-name nanome/chemical-interactions -f values.yaml
+```
+
+## values.yaml
+This values.yaml should work for most plugins, although some plugins have additional requirements. See `values.yaml` in each chart for specific requirements.
+```yaml
+global:
+  NTS_HOST:
+  NTS_PORT:
+  NTS_KEY:
+  PLUGIN_VERBOSE:
+  PLUGIN_WRITE_LOG_FILE: True
+  PLUGIN_REMOTE_LOGGING: False
 ```
