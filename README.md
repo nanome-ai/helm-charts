@@ -5,6 +5,12 @@ Easily deploy nanome plugins to your Kubernetes cluster!
 ```sh
 helm repo add nanome https://nanome-ai.github.io/helm-charts/
 ```
+
+## View available charts
+```sh
+helm search repo nanome
+```
+
 ## Deploy Starter Stack (Includes charts for all standard plugins)
 ```sh
 helm install --generate-name nanome/starter-stack -f values.yaml
