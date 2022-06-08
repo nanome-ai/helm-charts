@@ -9,7 +9,7 @@ global:
   PLUGIN_REMOTE_LOGGING: False
 
 data_table_plugin:
-  image: public.ecr.aws/h7r1e4h2/data-table:latest
+  image: public.ecr.aws/h7r1e4h2/data-table
   tag: latest
   server_url: *SERVER_URL
 
