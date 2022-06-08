@@ -196,6 +196,16 @@ entries:
   data-table:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-06-08T19:33:19.861430701Z"
+    description: A Helm chart for Kubernetes
+    digest: ec7c6c6dac2bca63b60a9d75d32476177b506ac2ceea1fad2d61898d9f335894
+    name: data-table
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/data-table-0.2.2/data-table-0.2.2.tgz
+    version: 0.2.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-06-08T17:58:05.899224909Z"
     description: A Helm chart for Kubernetes
     digest: 6e8bba36b27def8f170404e45b03f13a1adad062e2088fbc0566bd6763af243d
@@ -853,4 +863,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-08T17:58:05.899394709Z"
+generated: "2022-06-08T19:33:19.86150501Z"
