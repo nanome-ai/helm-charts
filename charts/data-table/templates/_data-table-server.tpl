@@ -1,5 +1,5 @@
 {{- define "data-table-server.tpl" }}
-{{-  $deployment_name := printf "data-table-server-%s" .release.Name -}}
+{{- $deployment_name := printf "data-table-server-%s" .release.Name -}}
 {{- $plugin_tag :=  .values.tag | default $.chart.AppVersion -}}
 
 apiVersion: apps/v1
