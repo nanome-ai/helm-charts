@@ -44,6 +44,10 @@ spec:
           value: "{{ $plugin_name }}"
         - name: PLUGIN_DESCRIPTION
           value: "{{ .values.global.PLUGIN_DESCRIPTION | default "" }}"
+        {{- range $k, $v := .values.ENV }}
+        - name: {{ $k }}
+          value: {{ $v }}
+        {{- end }}
         resources:
           requests:
             memory: "80Mi"
