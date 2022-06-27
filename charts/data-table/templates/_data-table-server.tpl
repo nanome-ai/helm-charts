@@ -1,6 +1,6 @@
 {{- define "data-table-server.tpl" }}
 {{- $deployment_name := printf "data-table-server-%s" .release.Name -}}
-{{- $plugin_tag :=  .values.tag | default $.chart.AppVersion -}}
+{{- $plugin_tag :=  .values.data_table_server.tag | default $.chart.AppVersion -}}
 
 apiVersion: apps/v1
 kind: Deployment
@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: data-table-server
-        image: {{ .values.image }}:{{ $plugin_tag }}
+        image: {{ .values.data_table_server.image }}:{{ $plugin_tag }}
         ports:
         - containerPort: 80
         - containerPort: 443

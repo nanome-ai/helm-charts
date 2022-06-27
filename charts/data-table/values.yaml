@@ -1,4 +1,5 @@
-SERVER_URL: &SERVER_URL 127.0.0.1  # Create service, and then update with external IP
+image: public.ecr.aws/h7r1e4h2/data-table
+tag: latest
 
 global:
   NTS_HOST:
@@ -8,13 +9,9 @@ global:
   PLUGIN_WRITE_LOG_FILE: True
   PLUGIN_REMOTE_LOGGING: False
 
-data_table_plugin:
-  image: public.ecr.aws/h7r1e4h2/data-table
-  tag: latest
-  ENV:
-    server_url: *SERVER_URL
+ENV:
+  SERVER_URL: 127.0.0.1
 
 data_table_server:
   image: public.ecr.aws/h7r1e4h2/data-table-server
   tag: latest
-  server_url: *SERVER_URL
