@@ -15,5 +15,6 @@
 !charts/realtime-scoring
 !charts/rmsd
 !charts/structure-prep
+!charts/superimpose-proteins
 !charts/vault
 !charts/smiles-loader
