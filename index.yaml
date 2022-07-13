@@ -407,6 +407,15 @@ entries:
     version: 0.2.0
   lib:
   - apiVersion: v2
+    created: "2022-07-13T17:38:45.927770406Z"
+    description: A Helm chart for Kubernetes
+    digest: 867bfbbfcc987c691de8321164506e6dd25000b00ee9ccc9a65032e5e16750b0
+    name: lib
+    type: library
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/lib-0.4.1/lib-0.4.1.tgz
+    version: 0.4.1
+  - apiVersion: v2
     created: "2022-06-27T21:01:12.975721045Z"
     description: A Helm chart for Kubernetes
     digest: 18de54e018215a32b5fcbeff33a558f352f602c23b06c3f73a144fb8932c4cdd
@@ -968,4 +977,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-07T19:16:25.826956603Z"
+generated: "2022-07-13T17:38:45.927889012Z"
