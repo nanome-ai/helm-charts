@@ -952,20 +952,6 @@ entries:
     version: 0.2.0
   superimpose-proteins:
   - apiVersion: v2
-    appVersion: 0.4.11
-    created: "2022-07-07T19:06:31.387207051Z"
-    dependencies:
-    - name: lib
-      repository: https://nanome-ai.github.io/helm-charts
-      version: 0.3.0
-    description: A Helm chart for Kubernetes
-    digest: 87c7449e7e90fffe43c15032bbe4046f879de53aef049c8c0f5a754ee6417946
-    name: superimpose-proteins
-    type: application
-    urls:
-    - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-proteins-0.3.1/superimpose-proteins-0.3.1.tgz
-    version: 0.3.1
-  - apiVersion: v2
     appVersion: latest
     created: "2022-07-13T17:45:34.043692313Z"
     dependencies:
