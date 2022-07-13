@@ -1,55 +1,74 @@
-{{- define "data-table-plugin.deployment.tpl" }}
-{{- $plugin_name := .values.PLUGIN_NAME | default "" -}}
-{{- $plugin_image := .values.data_table_plugin.image -}}
-{{- $plugin_tag := .values.data_table_plugin.tag | default .chart.AppVersion -}}
-{{- $chart_name := .chart.Name -}}
-{{- $global := .global -}}
+{{- define "data-table.deployment.tpl" }}
 
-{{-  $deployment_name := printf "data-table-plugin-%s" .release.Name -}}
+{{- $plugin_image := .values.plugin_image -}}
+{{- $plugin_tag :=  .values.plugin_tag | default $.chart.AppVersion -}}
+
+{{- $chart_name := $.chart.Name -}}
+{{- $plugin_name := .values.PLUGIN_NAME | default "" -}}
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ $deployment_name }}
+  name: {{ $chart_name }}-{{ .release.Name }}
   labels:
-    app: {{ $deployment_name }}
+    app: {{ $chart_name }}
     release: {{ .release.Name }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ $deployment_name }}
+      app: {{ $chart_name }}
       release: {{ .release.Name }}
   template:
     metadata:
       labels:
-        app: {{ $deployment_name }}
+        app: {{ $chart_name }}
         release: {{ .release.Name }}
-      annotations:
-        rollme: {{ randAlphaNum 5 | quote }}
     spec:
       containers:
-      - name: {{ $chart_name | lower }}
+      - name: {{ $chart_name }}
         image: {{ $plugin_image }}:{{ $plugin_tag }}
-        ports:
-        - containerPort: {{ $global.NTS_PORT }}
         env:
-        - name: ARGS
-          value: "-u {{ .values.server_url }}"
         - name: NTS_HOST
-          value: "{{ $global.NTS_HOST }}"
+          value: "{{ .values.global.NTS_HOST }}"
         - name: NTS_PORT
-          value: "{{ $global.NTS_PORT }}"
+          value: "{{ .values.global.NTS_PORT }}"
         - name: NTS_KEY
-          value: "{{ $global.NTS_KEY }}"
+          value: "{{ .values.global.NTS_KEY }}"
         - name: PLUGIN_VERBOSE
-          value: "{{ $global.PLUGIN_VERBOSE }}"
+          value: "{{ .values.global.PLUGIN_VERBOSE }}"
         - name: PLUGIN_WRITE_LOG_FILE
-          value: "{{ $global.PLUGIN_WRITE_LOG_FILE }}"
+          value: "{{ .values.global.PLUGIN_WRITE_LOG_FILE }}"
         - name: PLUGIN_REMOTE_LOGGING
-          value: "{{ $global.PLUGIN_REMOTE_LOGGING | default "false" }}"
+          value: "{{ .values.global.PLUGIN_REMOTE_LOGGING | default "false" }}"
         - name: PLUGIN_NAME
           value: "{{ $plugin_name }}"
+        - name: PLUGIN_DESCRIPTION
+          value: "{{ .values.global.PLUGIN_DESCRIPTION | default "" }}"
+        {{- range $k, $v := .values.ENV }}
+        - name: {{ $k }}
+          value: "{{ $v }}"
+        {{- end }}
+        resources:
+          requests:
+            memory: "80Mi"
+            cpu: "100m"
+          limits:
+            memory: "512Mi"
+            cpu: "1000m"
+      - name: data-table-server
+        image: {{ .values.server_image }}:{{ .values.server_tag }}
+        ports:
+        - containerPort: 80
+        - containerPort: 443
+        resources:
+            requests:
+              memory: "32Mi"
+              cpu: "128m"
+            limits:
+              memory: "64Mi"
+              cpu: "256m"
+
+---
 
 {{- end -}}
----

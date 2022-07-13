@@ -1,5 +1,8 @@
-image: public.ecr.aws/h7r1e4h2/data-table
-tag: latest
+plugin_image: public.ecr.aws/h7r1e4h2/data-table
+plugin_tag: latest
+
+server_image: public.ecr.aws/h7r1e4h2/data-table-server
+server_tag: latest
 
 global:
   NTS_HOST:
@@ -11,7 +14,3 @@ global:
 
 ENV:
   SERVER_URL: 127.0.0.1
-
-data_table_server:
-  image: public.ecr.aws/h7r1e4h2/data-table-server
-  tag: latest
