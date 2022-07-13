@@ -22,7 +22,7 @@ spec:
       targetPort: 443
       name: https
   selector:
-    app: {{ $deployment_name }}
+    app: data-table
     release: {{ .release.Name }}
   type: LoadBalancer
 {{- end }}
