@@ -46,7 +46,7 @@ spec:
           value: "{{ .values.global.PLUGIN_DESCRIPTION | default "" }}"
         {{- range $k, $v := .values.ENV }}
         - name: {{ $k }}
-          value: {{ $v }}
+          value: "{{ $v }}"
         {{- end }}
         resources:
           requests:
