@@ -1,0 +1,2 @@
+{{ $server_data := dict "values" $.Values "release" $.Release "chart" $.Chart }}
+{{- include "vault.pvc.tpl" $server_data }}

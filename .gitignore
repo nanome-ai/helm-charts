@@ -1,4 +1,6 @@
-*
+*.tgz
+charts/*
+values-*.yaml
 !values.yaml
 !charts/chemical-interactions
 !charts/chemical-preview
@@ -16,5 +18,5 @@
 !charts/rmsd
 !charts/structure-prep
 !charts/superimpose-proteins
-!charts/vault
 !charts/smiles-loader
+!charts/vault

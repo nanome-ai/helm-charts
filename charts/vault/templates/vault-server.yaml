@@ -1,2 +1,0 @@
-{{ $server_data := dict "values" $.Values.vault_server "release" $.Release }}
-{{- include "vault-server.tpl" $server_data }}
