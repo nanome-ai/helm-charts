@@ -12,6 +12,7 @@ metadata:
   labels:
     app: {{ $chart_name }}
     release: {{ .release.Name }}
+    plugin_tag: {{ $plugin_tag }}
 spec:
   replicas: 1
   selector:

@@ -57,9 +57,6 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1000m"
-        volumeMounts:
-        - name: vol
-          mountPath: /root
       - name: vault-server
         image: {{ .values.server_image }}:{{ .values.server_tag }}
         ports:
@@ -72,9 +69,14 @@ spec:
             limits:
               memory: "64Mi"
               cpu: "256m"
+        volumeMounts:
+        - name: vol
+          mountPath: /root
       volumes:
       - name: vol
-        emptyDir: {}
+        persistentVolumeClaim:
+          claimName: {{ $chart_name }}-{{ .release.Name }}-pvc
+
 ---
 
 {{- end -}}
