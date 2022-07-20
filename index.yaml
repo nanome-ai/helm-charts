@@ -435,6 +435,15 @@ entries:
     version: 0.2.0
   lib:
   - apiVersion: v2
+    created: "2022-07-20T00:00:30.316613254Z"
+    description: A Helm chart for Kubernetes
+    digest: e12152c74e43f9b4e64b0dff4a81ca96d9b8723a0d554e8ad0b6b1e42e95b382
+    name: lib
+    type: library
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/lib-0.4.2/lib-0.4.2.tgz
+    version: 0.4.2
+  - apiVersion: v2
     created: "2022-07-13T17:38:45.927770406Z"
     description: A Helm chart for Kubernetes
     digest: 867bfbbfcc987c691de8321164506e6dd25000b00ee9ccc9a65032e5e16750b0
@@ -982,6 +991,16 @@ entries:
   vault:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-20T00:00:30.572205576Z"
+    description: A Helm chart for Kubernetes
+    digest: 52e9a5ae1fa7510b149ae5ae7fa5895783e8a4376c94b328fcea3f0338a0ec9f
+    name: vault
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.3.0/vault-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-18T01:39:47.093295552Z"
     dependencies:
     - name: lib
@@ -1004,4 +1023,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-18T01:39:47.093514655Z"
+generated: "2022-07-20T00:00:30.572353579Z"
