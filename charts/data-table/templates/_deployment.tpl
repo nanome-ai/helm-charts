@@ -68,7 +68,6 @@ spec:
             limits:
               memory: "64Mi"
               cpu: "256m"
-
 ---
 
 {{- end -}}
