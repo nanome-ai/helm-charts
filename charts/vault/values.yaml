@@ -11,3 +11,4 @@ global:
 
 SERVER_URL: http://127.0.0.1
 VOLUME_NAME: vault-pv
+API_KEY: abc123

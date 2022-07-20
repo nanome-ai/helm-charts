@@ -49,7 +49,7 @@ spec:
         - name: {{ $k }}
           value: "{{ $v }}"
         {{- end }}
-        command: ["python", "run.py", "--api-key", "{{ .values.global.API_KEY }}", "--url", "{{ .values.SERVER_URL }}", "--internal-url", "http://127.0.0.1"]
+        command: ["python", "run.py", "--api-key", "{{ .values.API_KEY }}", "--url", "{{ .values.SERVER_URL }}", "--internal-url", "http://127.0.0.1"]
         resources:
           requests:
             memory: "80Mi"
