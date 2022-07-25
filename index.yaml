@@ -972,6 +972,16 @@ entries:
   superimpose-proteins:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-07-25T18:33:26.410102763Z"
+    description: A Helm chart for Kubernetes
+    digest: 8918e5e14a7e0e7a0848179c316855e85831c37b8c79ab61cdc3018018596bf6
+    name: superimpose-proteins
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-proteins-0.1.2/superimpose-proteins-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-07-13T17:45:34.043692313Z"
     dependencies:
     - name: lib
@@ -999,6 +1009,16 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-proteins-0.1.0/superimpose-proteins-0.1.0.tgz
     version: 0.1.0
   vault:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-07-25T18:33:26.571198944Z"
+    description: A Helm chart for Kubernetes
+    digest: a8588e7eb85d5b6736089de074b96c70359da3d0566341b38f4da56db726af68
+    name: vault
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.3.2/vault-0.3.2.tgz
+    version: 0.3.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-07-20T00:20:44.216769463Z"
@@ -1043,4 +1063,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-20T17:30:01.761054977Z"
+generated: "2022-07-25T18:33:26.571776854Z"
