@@ -10,5 +10,6 @@ global:
   NTS_KEY:
 
 SERVER_URL: http://127.0.0.1
+CONVERTER_URL: http://127.0.0.1:3000
 VOLUME_NAME: vault-pv
 API_KEY: abc123

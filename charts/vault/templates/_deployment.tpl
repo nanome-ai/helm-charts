@@ -43,13 +43,12 @@ spec:
           value: "{{ .values.global.PLUGIN_REMOTE_LOGGING | default "false" }}"
         - name: PLUGIN_NAME
           value: "{{ $plugin_name }}"
-        - name: PLUGIN_DESCRIPTION
-          value: "{{ .values.global.PLUGIN_DESCRIPTION | default "" }}"
-        {{- range $k, $v := .values.ENV }}
-        - name: {{ $k }}
-          value: "{{ $v }}"
-        {{- end }}
-        command: ["python", "run.py", "--api-key", "{{ .values.API_KEY }}", "--url", "{{ .values.SERVER_URL }}", "--internal-url", "http://127.0.0.1"]
+        - name: SERVER_URL
+          value: "{{ .values.SERVER_URL }}"
+        - name: API_KEY
+          value: "{{ .values.API_KEY }}"
+        - name: CONVERTER_URL
+          value: "{{ .values.CONVERTER_URL }}"
         resources:
           requests:
             memory: "80Mi"
@@ -63,15 +62,31 @@ spec:
         - containerPort: 80
         - containerPort: 443
         resources:
-            requests:
-              memory: "32Mi"
-              cpu: "128m"
-            limits:
-              memory: "64Mi"
-              cpu: "256m"
+          requests:
+            memory: "32Mi"
+            cpu: "128m"
+          limits:
+            memory: "64Mi"
+            cpu: "256m"
+        env:
+        - name: SERVER_URL
+          value: "{{ .values.SERVER_URL }}"
+        - name: API_KEY
+          value: "{{ .values.API_KEY }}"
         volumeMounts:
         - name: vol
           mountPath: /root
+      - name: vault-converter
+        image: thecodingmachine/gotenberg:6
+        ports:
+        - containerPort: 3000
+        env:
+        - name: DISABLE_GOOGLE_CHROME
+          value: "1"
+        - name: MAXIMUM_WAIT_TIMEOUT
+          value: "0"
+        - name: DEFAULT_WAIT_TIMEOUT
+          value: "0"
       volumes:
       - name: vol
         persistentVolumeClaim:
