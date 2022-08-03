@@ -9,8 +9,6 @@ metadata:
   labels:
     app: {{ $deployment_name }}
     release: {{ .release.Name }}
-  annotations:
-    "helm.sh/resource-policy": keep
 spec:
   ports:
     - protocol: TCP
@@ -24,5 +22,5 @@ spec:
   selector:
     app: {{ .chart.Name}}
     release: {{ .release.Name }}
-  type: LoadBalancer
+  type: NodePort
 {{- end }}
