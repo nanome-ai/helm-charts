@@ -49,6 +49,8 @@ spec:
           value: "{{ .values.API_KEY }}"
         - name: CONVERTER_URL
           value: "{{ .values.CONVERTER_URL }}"
+        - name: HTTPS
+          value: "{{ .values.HTTPS | default "true" }}"
         resources:
           requests:
             memory: "80Mi"
