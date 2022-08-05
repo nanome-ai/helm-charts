@@ -43,8 +43,8 @@ spec:
           value: "{{ .values.global.PLUGIN_REMOTE_LOGGING | default "false" }}"
         - name: PLUGIN_NAME
           value: "{{ $plugin_name }}"
-        - name: SERVER_URL
-          value: "{{ .values.SERVER_URL }}"
+        - name: VAULT_URL
+          value: "{{ .values.VAULT_URL }}"
         - name: API_KEY
           value: "{{ .values.API_KEY }}"
         - name: CONVERTER_URL
@@ -58,6 +58,7 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1000m"
+        command: ["python", "run.py", "--internal-url", "{{ .values.VAULT_URL }}"]
       - name: vault-server
         image: {{ .values.server_image }}:{{ .values.server_tag }}
         ports:
