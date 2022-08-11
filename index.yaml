@@ -327,6 +327,16 @@ entries:
   docking-smina:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-08-11T15:33:16.712675948Z"
+    description: A Helm chart for Kubernetes
+    digest: e3d0406fb2d9f55dc62948bb9f8c6afdc886c9e17a5872713634ad57a1818268
+    name: docking-smina
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/docking-smina-0.3.2/docking-smina-0.3.2.tgz
+    version: 0.3.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-06-02T15:56:31.644017475Z"
     dependencies:
     - name: lib
@@ -1103,4 +1113,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-05T20:23:30.037274614Z"
+generated: "2022-08-11T15:33:16.712872348Z"
