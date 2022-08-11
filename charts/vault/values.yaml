@@ -11,5 +11,6 @@ global:
 
 VAULT_URL: http://127.0.0.1
 CONVERTER_URL: http://127.0.0.1:3000
-VOLUME_NAME: vault-pv
+PV_NAME: vault-pv
+PVC_STORAGE: 10Gi
 API_KEY: abc123
