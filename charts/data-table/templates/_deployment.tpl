@@ -43,8 +43,6 @@ spec:
           value: "{{ .values.global.PLUGIN_REMOTE_LOGGING | default "false" }}"
         - name: PLUGIN_NAME
           value: "{{ $plugin_name }}"
-        - name: PLUGIN_DESCRIPTION
-          value: "{{ .values.global.PLUGIN_DESCRIPTION | default "" }}"
         {{- range $k, $v := .values.ENV }}
         - name: {{ $k }}
           value: "{{ $v }}"
@@ -62,12 +60,12 @@ spec:
         - containerPort: 80
         - containerPort: 443
         resources:
-            requests:
-              memory: "32Mi"
-              cpu: "128m"
-            limits:
-              memory: "64Mi"
-              cpu: "256m"
+          requests:
+            memory: "80Mi"
+            cpu: "10m"
+          limits:
+            memory: "512Mi"
+            cpu: "1000m"
 ---
 
 {{- end -}}

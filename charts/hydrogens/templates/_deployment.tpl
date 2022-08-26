@@ -1,4 +1,4 @@
-{{- define "lib.plugin_deployment.tpl" }}
+{{- define "hydrogens.plugin_deployment.tpl" }}
 {{- $plugin_image := .values.image -}}
 {{- $plugin_tag :=  .values.tag | default $.chart.AppVersion -}}
 
@@ -43,21 +43,17 @@ spec:
           value: "{{ .values.global.PLUGIN_REMOTE_LOGGING | default "false" }}"
         - name: PLUGIN_NAME
           value: "{{ $plugin_name }}"
-        - name: PLUGIN_DESCRIPTION
-          value: "{{ .values.global.PLUGIN_DESCRIPTION | default "" }}"
         {{- range $k, $v := .values.ENV }}
         - name: {{ $k }}
           value: "{{ $v }}"
         {{- end }}
         resources:
           requests:
-            memory: "80Mi"
-            cpu: "100m"
+            memory: "32Mi"
+            cpu: "10m"
           limits:
             memory: "512Mi"
             cpu: "1000m"
-      imagePullSecrets:
-      - name: regcred
 ---
 
 {{- end -}}
