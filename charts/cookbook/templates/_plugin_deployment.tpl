@@ -58,8 +58,6 @@ spec:
           value: "{{ .global.REDIS_CHANNEL | default "" }}"
         - name: JUPYTER_TOKEN
           value: "{{ .global.JUPYTER_TOKEN | default "" }}"
-        
-          
         resources:
           requests:
             memory: "80Mi"
@@ -70,6 +68,4 @@ spec:
       imagePullSecrets:
       - name: regcred
 ---
-
 {{- end -}}
-       

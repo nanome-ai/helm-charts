@@ -24,5 +24,5 @@ spec:
     app: {{ $deployment_name }}
     release: {{ .release.Name }}
   type: LoadBalancer
-
+---
 {{- end }}
