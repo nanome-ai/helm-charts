@@ -36,6 +36,28 @@ spec:
           value: "{{ .values.NTS_PORT }}"
         - name: NTS_KEY
           value: "{{ .values.NTS_KEY }}"
+        - name: PLUGIN_VERBOSE
+          value: "{{ .values.PLUGIN_VERBOSE }}"
+        - name: PLUGIN_WRITE_LOG_FILE
+          value: "{{ .values.PLUGIN_WRITE_LOG_FILE }}"
+        - name: PLUGIN_REMOTE_LOGGING
+          value: "{{ .values.PLUGIN_REMOTE_LOGGING | default "false" }}"
+        - name: PLUGIN_NAME
+          value: "{{ $plugin_name }}"
+        - name: PLUGIN_DESCRIPTION
+          value: "{{ .values.PLUGIN_DESCRIPTION | default "" }}"
+        - name: DEFAULT_URL
+          value: "{{ .values.DEFAULT_URL | default "" }}"
+        - name: REDIS_HOST
+          value: "{{ .global.REDIS_HOST | default "" }}"
+        - name: REDIS_PORT
+          value: "{{ .global.REDIS_PORT | default "" }}"
+        - name: REDIS_PASSWORD
+          value: "{{ .global.REDIS_PASSWORD | default "" }}"
+        - name: REDIS_CHANNEL
+          value: "{{ .global.REDIS_CHANNEL | default "" }}"
+        - name: JUPYTER_TOKEN
+          value: "{{ .global.JUPYTER_TOKEN | default "" }}"
         resources:
           requests:
             memory: "80Mi"
