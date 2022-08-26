@@ -21,3 +21,7 @@ version: 0.5.1
 # Will be used as tag to retrieve ECR image.
 # It is recommended to use it with quotes.
 appVersion: "latest"
+
+maintainers:
+  - name: Mike Rosengrant
+    email: mike.rosengrant@nanome.ai
