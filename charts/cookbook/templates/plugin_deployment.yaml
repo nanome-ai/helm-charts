@@ -1,2 +1,0 @@
-{{ $data := dict "values" $.Values.plugin "release" $.Release "global" $.Values.global "chart" $.Chart }}
-{{- include "cookbook.plugin_deployment.tpl" $data }}
