@@ -62,12 +62,12 @@ spec:
         - containerPort: 80
         - containerPort: 443
         resources:
-            requests:
-              memory: "32Mi"
-              cpu: "128m"
-            limits:
-              memory: "64Mi"
-              cpu: "256m"
+          requests:
+            memory: "80Mi"
+            cpu: "10m"
+          limits:
+            memory: "512Mi"
+            cpu: "1000m"
 ---
 
 {{- end -}}
