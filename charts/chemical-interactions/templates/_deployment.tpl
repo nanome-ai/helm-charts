@@ -56,8 +56,6 @@ spec:
           limits:
             memory: "1024Mi"
             cpu: 1
-      imagePullSecrets:
-      - name: regcred
 ---
 
 {{- end -}}
