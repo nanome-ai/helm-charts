@@ -115,6 +115,19 @@ entries:
   chemical-properties:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-09-07T22:03:30.921131067Z"
+    description: A Helm chart for Kubernetes
+    digest: eb1f64694cd181835238b762c219872f8d3a76a7ab09743d25280cb34fa0d8df
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: chemical-properties
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/chemical-properties-0.3.3/chemical-properties-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:23.246378083Z"
     description: A Helm chart for Kubernetes
     digest: c4bbfa13ab3fe5ba571b86b18322f931f80e81d0dc5e28fbaa2151ae6855d431
@@ -1331,4 +1344,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-26T17:47:25.268423583Z"
+generated: "2022-09-07T22:03:30.921679604Z"
