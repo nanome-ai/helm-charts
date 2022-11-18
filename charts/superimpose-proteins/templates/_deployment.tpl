@@ -47,7 +47,6 @@ spec:
         - name: {{ $k }}
           value: "{{ $v }}"
         {{- end }}
-
         resources:
           requests:
             memory: "80Mi"
@@ -55,8 +54,6 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1000m"
-      imagePullSecrets:
-      - name: regcred
 ---
 
 {{- end -}}

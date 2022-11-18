@@ -8,6 +8,3 @@ global:
   PLUGIN_VERBOSE: false
   PLUGIN_WRITE_LOG_FILE: true
   PLUGIN_REMOTE_LOGGING: false
-
-ENV:
-  FEATURE_FLAG_BINDING_SITE: "false"
