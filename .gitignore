@@ -6,11 +6,13 @@ values-*.yaml
 !charts/chemical-interactions
 !charts/chemical-preview
 !charts/chemical-properties
+!charts/conformer-generator
 !charts/cookbook
 !charts/coordinate-align
 !charts/data-table
 !charts/docking-smina
 !charts/esp
+!charts/high-quality-surfaces
 !charts/hydrogens
 !charts/merge-as-frames
 !charts/minimization

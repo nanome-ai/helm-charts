@@ -1,0 +1,2 @@
+{{ $data := dict "values" $.Values "release" $.Release "chart" $.Chart }}
+{{- include "high_quality_surfaces.plugin_deployment.tpl" $data }}
