@@ -2,6 +2,7 @@
 charts/*
 values-*.yaml
 !values.yaml
+!charts/antibodies
 !charts/chemical-interactions
 !charts/chemical-preview
 !charts/chemical-properties
