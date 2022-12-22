@@ -1,0 +1,2 @@
+{{ $data := dict "values" $.Values "release" $.Release "chart" $.Chart }}
+{{- include "antibodies.plugin_deployment.tpl" $data }}

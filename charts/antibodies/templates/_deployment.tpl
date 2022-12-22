@@ -1,4 +1,4 @@
-{{- define "superimpose.deployment.tpl" }}
+{{- define "antibodies.plugin_deployment.tpl" }}
 {{- $plugin_image := .values.image -}}
 {{- $plugin_tag :=  .values.tag | default $.chart.AppVersion -}}
 
@@ -12,7 +12,6 @@ metadata:
   labels:
     app: {{ $chart_name }}
     release: {{ .release.Name }}
-    plugin_tag: {{ $plugin_tag }}
 spec:
   replicas: 1
   selector:
@@ -49,11 +48,11 @@ spec:
         {{- end }}
         resources:
           requests:
-            memory: "80Mi"
-            cpu: "100m"
+            memory: "32Mi"
+            cpu: "10m"
           limits:
-            memory: "512Mi"
-            cpu: "1000m"
+            memory: "1024Mi"
+            cpu: 1
 ---
 
 {{- end -}}
