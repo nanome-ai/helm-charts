@@ -195,6 +195,20 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/chemical-properties-0.2.0/chemical-properties-0.2.0.tgz
     version: 0.2.0
+  conformer-generator:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-12-22T16:02:23.47976965Z"
+    description: A Helm chart for Kubernetes
+    digest: 0b3e9697985574fa4ff07fcd8e085ac9fecd703d455c9b1b69fe2142f8b1c0fa
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: conformer-generator
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/conformer-generator-0.1.0/conformer-generator-0.1.0.tgz
+    version: 0.1.0
   cookbook:
   - apiVersion: v2
     appVersion: latest
@@ -538,6 +552,20 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/esp-0.2.0/esp-0.2.0.tgz
     version: 0.2.0
+  high-quality-surfaces:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-12-22T16:02:23.715991436Z"
+    description: A Helm chart for Kubernetes
+    digest: bb04723a9bb0e6fac55bb6683749b4bd4f561ee1650a3fd81eb66323de5b5520
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: high-quality-surfaces
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/high-quality-surfaces-0.1.0/high-quality-surfaces-0.1.0.tgz
+    version: 0.1.0
   hydrogens:
   - apiVersion: v2
     appVersion: latest
@@ -1371,4 +1399,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-22T15:49:01.021326123Z"
+generated: "2022-12-22T16:02:23.716323888Z"
