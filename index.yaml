@@ -1,5 +1,19 @@
 apiVersion: v1
 entries:
+  antibodies:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-12-22T15:49:00.851702117Z"
+    description: A Helm chart for Kubernetes
+    digest: 348afd9ba9af6d5e19869a7b5d29a32c9a504bdd083980d7a3fe4c998deeefc3
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: antibodies
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/antibodies-0.1.0/antibodies-0.1.0.tgz
+    version: 0.1.0
   chemical-interactions:
   - apiVersion: v2
     appVersion: latest
@@ -1187,6 +1201,19 @@ entries:
   superimpose-proteins:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-12-22T15:49:01.02114092Z"
+    description: A Helm chart for Kubernetes
+    digest: 469381ebf28e3129dd6684e85cb15f29f2525d1abc64fe90ac79d533f885ae95
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: superimpose-proteins
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-proteins-0.1.4/superimpose-proteins-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:25.12129733Z"
     description: A Helm chart for Kubernetes
     digest: baf00a8c548c48820b877a4581f439421244970fa2de029cedacb83c682da96c
@@ -1344,4 +1371,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-07T22:03:30.921679604Z"
+generated: "2022-12-22T15:49:01.021326123Z"
