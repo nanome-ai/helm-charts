@@ -17,6 +17,19 @@ entries:
   chemical-interactions:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-01-19T22:15:01.121758328Z"
+    description: A Helm chart for Kubernetes
+    digest: b165b299af39517d794a359f79d0c1ec39e2c1929357a2e3d799a2538da5d823
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: chemical-interactions
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/chemical-interactions-0.5.2/chemical-interactions-0.5.2.tgz
+    version: 0.5.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:22.943931769Z"
     description: A Helm chart for Kubernetes
     digest: 80dd53b0c902e7e9f3992efe14660c0889ad01a8b6cefa82c2279398485ae1d3
@@ -71,6 +84,19 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/chemical-interactions-0.3.0/chemical-interactions-0.3.0.tgz
     version: 0.3.0
   chemical-preview:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-01-19T22:15:01.332918063Z"
+    description: A Helm chart for Kubernetes
+    digest: 576c2e8de679e5f8f341235444328809a42b285e14a22fd1e285817a495d21c2
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: chemical-preview
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/chemical-preview-0.4.3/chemical-preview-0.4.3.tgz
+    version: 0.4.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-26T17:47:23.090161721Z"
@@ -231,6 +257,19 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/cookbook-0.2.0/cookbook-0.2.0.tgz
     version: 0.2.0
   coordinate-align:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-01-19T22:15:01.613581236Z"
+    description: A Helm chart for Kubernetes
+    digest: e22bb8c01f5f2622f3714542a3c00d36417026e2b08534146e88a2a9b4058eb7
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: coordinate-align
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/coordinate-align-0.3.3/coordinate-align-0.3.3.tgz
+    version: 0.3.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-26T17:47:23.393612636Z"
@@ -433,6 +472,19 @@ entries:
   docking-smina:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-01-19T22:15:01.766689004Z"
+    description: A Helm chart for Kubernetes
+    digest: 6f038fc254d4a5a57787b8205cd1e837c3c73c2656bc3ca905b9cadcb1930060
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: docking-smina
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/docking-smina-0.3.4/docking-smina-0.3.4.tgz
+    version: 0.3.4
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:23.70614756Z"
     description: A Helm chart for Kubernetes
     digest: 160edfd26fe550a1d92639b33fb939911a7edbe0a182bf55eb73da9518e5b7a6
@@ -497,6 +549,19 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/docking-smina-0.2.0/docking-smina-0.2.0.tgz
     version: 0.2.0
   esp:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-01-19T22:15:01.912056422Z"
+    description: A Helm chart for Kubernetes
+    digest: 4aded9675a8b44138ddd759974e27cb21e3909fdee5643f851d765410c35a1da
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: esp
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/esp-0.3.3/esp-0.3.3.tgz
+    version: 0.3.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-26T17:47:23.848456808Z"
@@ -567,6 +632,19 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/high-quality-surfaces-0.1.0/high-quality-surfaces-0.1.0.tgz
     version: 0.1.0
   hydrogens:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-01-19T22:15:02.081504293Z"
+    description: A Helm chart for Kubernetes
+    digest: 4a7851e9c7d026236909f38df6b3642d7f24438f814aad297eea64fecd217294
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: hydrogens
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/hydrogens-0.3.3/hydrogens-0.3.3.tgz
+    version: 0.3.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-26T17:47:24.010099976Z"
@@ -671,6 +749,19 @@ entries:
   merge-as-frames:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-01-19T22:15:02.253241478Z"
+    description: A Helm chart for Kubernetes
+    digest: a3439d6a65308f87b12fb471a5f02a9c398a10103e3ea9596e3d17bf9c37809b
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: merge-as-frames
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/merge-as-frames-0.3.3/merge-as-frames-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:24.174592647Z"
     description: A Helm chart for Kubernetes
     digest: 48cec23765a0f4ae083d99e9d85b3657d3f227717680e70557f198e06b92b7ee
@@ -725,6 +816,19 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/merge-as-frames-0.2.0/merge-as-frames-0.2.0.tgz
     version: 0.2.0
   minimization:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-01-19T22:15:02.410034966Z"
+    description: A Helm chart for Kubernetes
+    digest: b985dd3406624c4c2952eb1f3bdfd7eee9fbaf1a0d5a94fa2fd89d2c824e54ac
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: minimization
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/minimization-0.3.3/minimization-0.3.3.tgz
+    version: 0.3.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-26T17:47:24.324939603Z"
@@ -783,6 +887,19 @@ entries:
   realtime-scoring:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-01-19T22:15:02.578705648Z"
+    description: A Helm chart for Kubernetes
+    digest: 3d280aee1b6cf61c2c344b3df300f43549a9b04262e62c05b87f53379b273c2f
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: realtime-scoring
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/realtime-scoring-0.3.3/realtime-scoring-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:24.508600794Z"
     description: A Helm chart for Kubernetes
     digest: c40e69079424ef8c4c79fcc8e97ffdec3fb7d12c45b1451bfdc9e92ed58808d5
@@ -839,6 +956,19 @@ entries:
   rmsd:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-01-19T22:15:02.750060144Z"
+    description: A Helm chart for Kubernetes
+    digest: 5724e037c8e26b3e3e6a6c9552b4332ee81ef1e5c4f6868cd66220a765bdaf3e
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: rmsd
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/rmsd-0.3.3/rmsd-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:24.657846849Z"
     description: A Helm chart for Kubernetes
     digest: d3305a2215967cc0fb1d9530930b2495f3c08671904d1c9cc6ad8c3eff676c62
@@ -893,6 +1023,19 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/rmsd-0.2.0/rmsd-0.2.0.tgz
     version: 0.2.0
   smiles-loader:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-01-19T22:15:02.934019806Z"
+    description: A Helm chart for Kubernetes
+    digest: 7933d7e6d9363d0aacda71f8ecbc9d620f25b9975d069f12680cb7620d0d547d
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: smiles-loader
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/smiles-loader-0.3.3/smiles-loader-0.3.3.tgz
+    version: 0.3.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-08-26T17:47:24.810610707Z"
@@ -1173,6 +1316,19 @@ entries:
   structure-prep:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-01-19T22:15:03.113214343Z"
+    description: A Helm chart for Kubernetes
+    digest: 85d7f7ce7470ae09f7806be3828eac3e9957c9604535b1a756031979fc53acff
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: structure-prep
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/structure-prep-0.3.3/structure-prep-0.3.3.tgz
+    version: 0.3.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-08-26T17:47:24.97656098Z"
     description: A Helm chart for Kubernetes
     digest: 07321a2af15a024f5e21d0b03d9ed02986dc129fc8150b88a116d62aebc27dc2
@@ -1227,6 +1383,19 @@ entries:
     - https://github.com/nanome-ai/helm-charts/releases/download/structure-prep-0.2.0/structure-prep-0.2.0.tgz
     version: 0.2.0
   superimpose-proteins:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2023-01-19T22:15:03.276546997Z"
+    description: A Helm chart for Kubernetes
+    digest: 569eaca778cf9bf53275ba33f29d74442c48d963a08de609d50bbc3be8a79bc1
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: superimpose-proteins
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/superimpose-proteins-0.1.5/superimpose-proteins-0.1.5.tgz
+    version: 0.1.5
   - apiVersion: v2
     appVersion: latest
     created: "2022-12-22T15:49:01.02114092Z"
@@ -1399,4 +1568,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2022-12-22T16:02:23.716323888Z"
+generated: "2023-01-19T22:15:03.276836199Z"
