@@ -1,6 +1,6 @@
 {{- define "coordinate_aligne.plugin_deployment.tpl" }}
-{{- $plugin_image := .values.image -}}
-{{- $plugin_tag :=  .values.tag | default $.chart.AppVersion -}}
+{{- $plugin_image := .values.image.tag.name -}}
+{{- $plugin_tag :=  .values.image.tag | default $.chart.AppVersion -}}
 
 {{- $chart_name := $.chart.Name -}}
 {{- $plugin_name := .values.PLUGIN_NAME | default "" -}}

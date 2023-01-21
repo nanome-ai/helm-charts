@@ -1,7 +1,10 @@
 {{- define "data-table.deployment.tpl" }}
 
-{{- $plugin_image := .values.plugin_image -}}
-{{- $plugin_tag :=  .values.plugin_tag | default $.chart.AppVersion -}}
+{{- $plugin_image := .values.plugin.image.name -}}
+{{- $plugin_tag :=  .values.plugin.image.tag | default $.chart.AppVersion -}}
+
+{{- $server_image := .values.server.image.name -}}
+{{- $server_tag :=  .values.server.image.tag | default $.chart.AppVersion -}}
 
 {{- $chart_name := $.chart.Name -}}
 {{- $plugin_name := .values.PLUGIN_NAME | default "" -}}
@@ -55,7 +58,7 @@ spec:
             memory: "512Mi"
             cpu: "1000m"
       - name: data-table-server
-        image: {{ .values.server_image }}:{{ .values.server_tag }}
+        image: {{ $server_image }}:{{ $server_tag }}
         ports:
         - containerPort: 80
         - containerPort: 443
