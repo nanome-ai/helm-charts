@@ -54,6 +54,5 @@ spec:
             memory: "2048Mi"
             cpu: "1000m"
 ---
-
 {{- end -}}
        
