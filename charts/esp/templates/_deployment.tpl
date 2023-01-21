@@ -12,7 +12,6 @@ metadata:
   labels:
     app: {{ $chart_name }}
     release: {{ .release.Name }}
-    
 spec:
   replicas: 1
   selector:
