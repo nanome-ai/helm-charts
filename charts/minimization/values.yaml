@@ -1,5 +1,6 @@
-image: public.ecr.aws/h7r1e4h2/minimization
-tag: latest
+image:
+  name: public.ecr.aws/h7r1e4h2/minimization
+  tag:
 
 global:
   NTS_HOST:
