@@ -1,8 +1,12 @@
-plugin_image: public.ecr.aws/h7r1e4h2/vault
-plugin_tag: latest
+plugin:
+  image:
+    name: public.ecr.aws/h7r1e4h2/vault
+    tag:
 
-server_image: public.ecr.aws/h7r1e4h2/vault-server
-server_tag: latest
+server:
+  image:
+    name: public.ecr.aws/h7r1e4h2/vault-server
+    tag:
 
 global:
   NTS_HOST:

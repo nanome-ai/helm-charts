@@ -1,5 +1,6 @@
-image: public.ecr.aws/h7r1e4h2/smiles-loader
-tag: latest
+image:
+  name: public.ecr.aws/h7r1e4h2/smiles-loader
+  tag:
 
 global:
   NTS_HOST:
