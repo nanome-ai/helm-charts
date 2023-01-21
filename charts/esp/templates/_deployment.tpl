@@ -12,6 +12,7 @@ metadata:
   labels:
     app: {{ $chart_name }}
     release: {{ .release.Name }}
+
 spec:
   replicas: 1
   selector:
@@ -54,5 +55,6 @@ spec:
             memory: "2048Mi"
             cpu: "1000m"
 ---
+
 {{- end -}}
        
