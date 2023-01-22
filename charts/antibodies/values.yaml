@@ -1,6 +1,6 @@
 image:
   name: public.ecr.aws/h7r1e4h2/antibodies
-  tag: latest
+  tag:
 
 global:
   NTS_HOST:
