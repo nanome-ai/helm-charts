@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   antibodies:
   - apiVersion: v2
+    appVersion: 1.0.2
+    created: "2023-01-23T05:27:06.515836724Z"
+    description: A Helm chart for Kubernetes
+    digest: 17288e86cc14bc81b8527919ec5be839255908724fdee927791a87617b45a188
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: antibodies
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/antibodies-0.1.2/antibodies-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
     appVersion: 1.0.1
     created: "2023-01-22T05:49:07.234874267Z"
     description: A Helm chart for Kubernetes
@@ -1815,4 +1828,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-22T05:49:07.235075668Z"
+generated: "2023-01-23T05:27:06.516370433Z"
