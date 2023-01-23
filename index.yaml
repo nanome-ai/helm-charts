@@ -917,6 +917,19 @@ entries:
     version: 0.2.0
   merge-as-frames:
   - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2023-01-23T14:15:06.650503538Z"
+    description: A Helm chart for Kubernetes
+    digest: d87cb58f03dacde83265065d3e0b1016c697e5e92a721b132ad13b0a743a7c9d
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: merge-as-frames
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/merge-as-frames-0.3.5/merge-as-frames-0.3.5.tgz
+    version: 0.3.5
+  - apiVersion: v2
     appVersion: 0.38.10
     created: "2023-01-21T20:15:34.831481046Z"
     description: A Helm chart for Kubernetes
@@ -1841,4 +1854,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-23T13:33:55.566572842Z"
+generated: "2023-01-23T14:15:06.65088754Z"
