@@ -42,6 +42,19 @@ entries:
     version: 0.1.0
   chemical-interactions:
   - apiVersion: v2
+    appVersion: 1.3.4
+    created: "2023-01-23T13:33:55.566349643Z"
+    description: A Helm chart for Kubernetes
+    digest: c2bc612a226f4bfbe4e6e96838e7e9652ac392ed7a6fdd257f2c92e0f548d45b
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: chemical-interactions
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/chemical-interactions-0.5.4/chemical-interactions-0.5.4.tgz
+    version: 0.5.4
+  - apiVersion: v2
     appVersion: 1.3.3
     created: "2023-01-21T20:15:32.919954655Z"
     description: A Helm chart for Kubernetes
@@ -1828,4 +1841,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-23T05:27:06.516370433Z"
+generated: "2023-01-23T13:33:55.566572842Z"
