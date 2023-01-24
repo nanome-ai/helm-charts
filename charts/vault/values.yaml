@@ -2,18 +2,16 @@ plugin:
   image:
     name: public.ecr.aws/h7r1e4h2/vault
     tag:
+  INTERNAL_URL: http://127.0.0.1
 
 server:
   image:
     name: public.ecr.aws/h7r1e4h2/vault-server
     tag:
+  HTTP_PORT: 80
+  HTTPS_PORT: 443
+  PVC_STORAGE:
 
-global:
-  NTS_HOST:
-  NTS_PORT:
-  NTS_KEY:
-
-VAULT_URL: http://127.0.0.1
+VAULT_URL: example.com
 CONVERTER_URL: http://127.0.0.1:3000
-PVC_STORAGE: 10Gi
-API_KEY: abc123
+API_KEY:

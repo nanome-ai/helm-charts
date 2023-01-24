@@ -54,6 +54,8 @@ spec:
           value: "{{ .values.CONVERTER_URL }}"
         - name: HTTPS
           value: "{{ .values.HTTPS | default "true" }}"
+        - name: INTERNAL_URL
+          value: "{{ .values.plugin.INTERNAL_URL }}"
         resources:
           requests:
             memory: "80Mi"
@@ -61,12 +63,11 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1000m"
-        command: ["python", "run.py", "--internal-url", "{{ .values.VAULT_URL }}"]
       - name: vault-server
         image: {{ $server_image }}:{{ $server_tag }}
         ports:
-        - containerPort: 80
-        - containerPort: 443
+        - containerPort: {{ .values.server.HTTPS_PORT }}
+        - containerPort: {{ .values.server.HTTPS_PORT }}
         resources:
           requests:
             memory: "32Mi"
@@ -79,6 +80,10 @@ spec:
           value: "{{ .values.SERVER_URL }}"
         - name: API_KEY
           value: "{{ .values.API_KEY }}"
+        - name: HTTPS_PORT
+          value: "{{ .values.server.HTTPS_PORT }}"
+        - name: HTTP_PORT
+          value: "{{ .values.server.HTTP_PORT }}"
         volumeMounts:
         - name: vol
           mountPath: /root
