@@ -514,6 +514,19 @@ entries:
     version: 0.2.0
   data-table:
   - apiVersion: v2
+    appVersion: 1.1.3
+    created: "2023-01-25T20:23:56.866269688Z"
+    description: A Nanome plugin to view multi-frame structure metadata in a table
+    digest: c079ceb0438b67ee935dfe46421f78f54dac842524630d98f1df149d744ae95c
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: data-table
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/data-table-0.4.4/data-table-0.4.4.tgz
+    version: 0.4.4
+  - apiVersion: v2
     appVersion: 1.1.2
     created: "2023-01-25T17:37:07.626397823Z"
     description: A Nanome plugin to view multi-frame structure metadata in a table
@@ -1778,6 +1791,19 @@ entries:
     version: 0.3.0
   structure-prep:
   - apiVersion: v2
+    appVersion: 1.0.3
+    created: "2023-01-25T20:23:57.017637951Z"
+    description: Server-side delegated bond and DSSP calculations for Oculus Quest
+    digest: 635eaf0d11ddc20cd50c76461238a93d883a297ebb0813d74fb3b37fa017a92a
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: structure-prep
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/structure-prep-0.3.6/structure-prep-0.3.6.tgz
+    version: 0.3.6
+  - apiVersion: v2
     appVersion: 1.0.2
     created: "2023-01-25T17:37:09.324170604Z"
     description: Server-side delegated bond and DSSP calculations for Oculus Quest
@@ -2112,4 +2138,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-25T17:37:09.467649349Z"
+generated: "2023-01-25T20:23:57.017957452Z"
