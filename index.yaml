@@ -3,6 +3,19 @@ entries:
   antibodies:
   - apiVersion: v2
     appVersion: 1.0.2
+    created: "2023-01-25T20:34:10.057618438Z"
+    description: Nanome plugin for working with antibodies
+    digest: 84ded09ffebc32cff19a2a0bef313de3681c8021940613b158460333b87e433c
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: antibodies
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/antibodies-0.1.4/antibodies-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.0.2
     created: "2023-01-25T17:37:06.632790769Z"
     description: Generate visual chemical interactions using open-source (Arpeggio)
       or your own web-service
@@ -2138,4 +2151,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-25T20:23:57.017957452Z"
+generated: "2023-01-25T20:34:10.057956444Z"
