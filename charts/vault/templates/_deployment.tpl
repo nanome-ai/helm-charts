@@ -39,9 +39,9 @@ spec:
         - name: NTS_KEY
           value: "{{ .values.global.NTS_KEY }}"
         - name: PLUGIN_VERBOSE
-          value: "{{ .values.global.PLUGIN_VERBOSE }}"
+          value: "{{ .values.global.PLUGIN_VERBOSE | default "false"}}"
         - name: PLUGIN_WRITE_LOG_FILE
-          value: "{{ .values.global.PLUGIN_WRITE_LOG_FILE }}"
+          value: "{{ .values.global.PLUGIN_WRITE_LOG_FILE | default "true" }}"
         - name: PLUGIN_REMOTE_LOGGING
           value: "{{ .values.global.PLUGIN_REMOTE_LOGGING | default "false" }}"
         - name: PLUGIN_NAME

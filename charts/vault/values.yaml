@@ -1,3 +1,11 @@
+global:
+  NTS_HOST:
+  NTS_PORT:
+  NTS_KEY:
+  PLUGIN_VERBOSE: false
+  PLUGIN_WRITE_LOG_FILE: true
+  PLUGIN_REMOTE_LOGGING: false
+
 plugin:
   image:
     name: public.ecr.aws/h7r1e4h2/vault
@@ -12,6 +20,6 @@ server:
   HTTPS_PORT: 443
   PVC_STORAGE:
 
-VAULT_URL: example.com
+VAULT_URL: vault.example.com
 CONVERTER_URL: http://127.0.0.1:3000
 API_KEY:
