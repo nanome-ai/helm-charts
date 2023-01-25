@@ -1,6 +1,6 @@
 apiVersion: v2
 name: chemical-properties
-description: A Nanome RDKit Plugin to view and compare computed chemical properties of ligands. 
+description: A Nanome RDKit Plugin to view and compare computed chemical properties of ligands.
 
 # A chart can be either an 'application' or a 'library' chart.
 #

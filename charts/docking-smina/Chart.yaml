@@ -1,6 +1,6 @@
 apiVersion: v2
 name: docking-smina
-description: Run and visualize Smina docking calculations in Nanome 
+description: Run and visualize Smina docking calculations in Nanome
 
 # A chart can be either an 'application' or a 'library' chart.
 #

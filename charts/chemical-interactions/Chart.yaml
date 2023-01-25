@@ -1,6 +1,6 @@
 apiVersion: v2
 name: chemical-interactions
-description: Generate visual chemical interactions using open-source (Arpeggio) or your own web-service 
+description: Generate visual chemical interactions using open-source (Arpeggio) or your own web-service
 
 # A chart can be either an 'application' or a 'library' chart.
 #

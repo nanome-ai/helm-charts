@@ -1,6 +1,6 @@
 apiVersion: v2
 name: hydrogens
-description: A plugin to add and remove hydrogens from selected structures in your Nanome workspace 
+description: A plugin to add and remove hydrogens from selected structures in your Nanome workspace
 
 # A chart can be either an 'application' or a 'library' chart.
 #

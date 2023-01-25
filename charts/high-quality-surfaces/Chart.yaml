@@ -1,6 +1,6 @@
 apiVersion: v2
 name: high-quality-surfaces
-description: Run MSMS and load the result in Nanome 
+description: Run MSMS and load the result in Nanome
 
 # A chart can be either an 'application' or a 'library' chart.
 #

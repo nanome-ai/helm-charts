@@ -1,6 +1,6 @@
 apiVersion: v2
 name: merge-as-frames
-description:  A Nanome plugin to merge multiple entries into the frames of a new entry.
+description: A Nanome plugin to merge multiple entries into the frames of a new entry.
 
 # A chart can be either an 'application' or a 'library' chart.
 #

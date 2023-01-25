@@ -1,6 +1,6 @@
 apiVersion: v2
 name: data-table
-description:  A Nanome plugin to view multi-frame structure metadata in a table 
+description: A Nanome plugin to view multi-frame structure metadata in a table
 
 # A chart can be either an 'application' or a 'library' chart.
 #
