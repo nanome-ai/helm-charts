@@ -6,8 +6,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  volumeName: {{ .values.PV_NAME }}
   resources:
     requests:
-      storage: "{{ .values.PVC_STORAGE | default "1Gi" }}"
+      storage: "{{ .values.server.PVC_STORAGE | default "1Gi" }}"
 {{- end -}}

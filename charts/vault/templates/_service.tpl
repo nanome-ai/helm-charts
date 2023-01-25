@@ -13,11 +13,11 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 80
+      targetPort: {{ .values.server.HTTP_PORT }}
       name: http
     - protocol: TCP
       port: 443
-      targetPort: 443
+      targetPort: {{ .values.server.HTTPS_PORT }}
       name: https
   selector:
     app: {{ .chart.Name}}
