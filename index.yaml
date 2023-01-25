@@ -1736,6 +1736,20 @@ entries:
   vault:
   - apiVersion: v2
     appVersion: 2.5.2
+    created: "2023-01-25T17:33:51.379530801Z"
+    description: A plugin to upload files via web interface to make them available
+      in Nanome
+    digest: f1da9ce89c63f7de901fd133f4b6998311a278a7467e1cb92702d7a557c2497c
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: vault
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.4.6/vault-0.4.6.tgz
+    version: 0.4.6
+  - apiVersion: v2
+    appVersion: 2.5.2
     created: "2023-01-21T20:15:36.142784937Z"
     description: A Helm chart for Kubernetes
     digest: 68d7ca6eb41a9fc455e60dc7dc5707b2ab50b8b502cbb0119c15558c2a21e2bd
@@ -1854,4 +1868,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-01-23T14:15:06.65088754Z"
+generated: "2023-01-25T17:33:51.379860599Z"
