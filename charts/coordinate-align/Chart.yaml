@@ -1,6 +1,6 @@
 apiVersion: v2
 name: coordinate-align
-description: A Helm chart for Kubernetes
+description: Override the 3D local coordinate space of a complex to be relative to a reference complex
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -21,7 +21,7 @@ version: 0.3.4
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: "1.0.2"
+appVersion: "1.0.3"
 
 maintainers:
   - name: mjrosengrant
