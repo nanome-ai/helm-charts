@@ -49,7 +49,7 @@ spec:
         {{- end }}
         resources:
           requests:
-            memory: "32Mi"
+            memory: "64Mi"
             cpu: "10m"
           limits:
             memory: "512Mi"

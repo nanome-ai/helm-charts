@@ -70,7 +70,7 @@ spec:
         - containerPort: {{ .values.server.HTTPS_PORT }}
         resources:
           requests:
-            memory: "32Mi"
+            memory: "64Mi"
             cpu: "128m"
           limits:
             memory: "64Mi"
