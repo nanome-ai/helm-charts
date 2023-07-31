@@ -1,0 +1,8 @@
+image:
+  name: public.ecr.aws/h7r1e4h2/quickdrop
+  tag: latest
+
+PORT: 5000
+FILES_DIR: "files"
+HTTPS: false
+BASE_URL: "127.0.0.1"

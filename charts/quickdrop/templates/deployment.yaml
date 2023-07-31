@@ -1,0 +1,2 @@
+{{ $app_data := dict "values" $.Values "release" $.Release "chart" $.Chart }}
+{{- include "quickdrop.deployment.tpl" $app_data }}
