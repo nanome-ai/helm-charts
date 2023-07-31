@@ -35,15 +35,15 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1000m"
-      env:
-        - name: PORT
-          value: "{{ .values.PORT }}"
-        - name: FILES_DIR
-          value: "{{ .values.FILES_DIR }}"
-        - name: HTTPS
-          value: "{{ .values.HTTPS }}"
-        - name: BASE_URL
-          value: "{{ .values.BASE_URL }}"
+        env:
+          - name: PORT
+            value: "{{ .values.PORT }}"
+          - name: FILES_DIR
+            value: "{{ .values.FILES_DIR }}"
+          - name: HTTPS
+            value: "{{ .values.HTTPS }}"
+          - name: BASE_URL
+            value: "{{ .values.BASE_URL }}"
 ---
 
 {{- end -}}
