@@ -4,5 +4,5 @@ image:
 
 PORT: 5000
 FILES_DIR: "files"
-HTTPS: True
+HTTPS: true
 BASE_URL: "127.0.0.1"
