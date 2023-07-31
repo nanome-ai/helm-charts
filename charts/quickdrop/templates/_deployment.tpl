@@ -36,10 +36,14 @@ spec:
             memory: "512Mi"
             cpu: "1000m"
       env:
-        - PORT: "{{ .values.PORT }}"
-        - FILES_DIR: "{{ .values.FILES_DIR }}"
-        - HTTPS: "{{ .values.HTTPS }}"
-        - BASE_URL: "{{ .values.BASE_URL }}"
+        - name: PORT
+          value: "{{ .values.PORT }}"
+        - name: FILES_DIR
+          value: "{{ .values.FILES_DIR }}"
+        - name: HTTPS
+          value: "{{ .values.HTTPS }}"
+        - name: BASE_URL
+          value: "{{ .values.BASE_URL }}"
 ---
 
 {{- end -}}
