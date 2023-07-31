@@ -16,6 +16,7 @@ values-*.yaml
 !charts/hydrogens
 !charts/merge-as-frames
 !charts/minimization
+!charts/quickdrop
 !charts/realtime-scoring
 !charts/rmsd
 !charts/structure-prep
