@@ -1,5 +1,6 @@
 {{- define "quickdrop.service.tpl" }}
 {{- $deployment_name := printf "%s-%s" .chart.Name .release.Name -}}
+{{- $chart_name := $.chart.Name -}}
 
 kind: Service
 apiVersion: v1
@@ -7,18 +8,14 @@ apiVersion: v1
 metadata:
   name: {{ $deployment_name }}
   labels:
-    app: {{ $deployment_name }}
+    app: {{ $chart_name }}
     release: {{ .release.Name }}
 spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: {{ .values.HTTP_PORT}}
+      targetPort: {{ .values.PORT}}
       name: http
-    - protocol: TCP
-      port: 443
-      targetPort: {{ .values.HTTPS_PORT }}
-      name: https
   selector:
     app: {{ .chart.Name}}
     release: {{ .release.Name }}

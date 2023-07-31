@@ -27,6 +27,7 @@ spec:
       containers:
       - name: {{ $chart_name }}
         image: {{ $app_image }}:{{ $app_tag }}
+        imagePullPolicy: Always
         resources:
           requests:
             memory: "80Mi"
@@ -34,6 +35,11 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1000m"
+      env:
+        - PORT: "{{ .values.PORT }}"
+        - FILES_DIR: "{{ .values.FILES_DIR }}"
+        - HTTPS: "{{ .values.HTTPS }}"
+        - BASE_URL: "{{ .values.BASE_URL }}"
 ---
 
 {{- end -}}
