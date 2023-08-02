@@ -47,7 +47,7 @@ spec:
         volumeMounts:
         - name: vol
           mountPath: /go/src/app/quickdrop.db
-    volumes:
+      volumes:
       - name: vol
         persistentVolumeClaim:
           claimName: {{ $chart_name }}-{{ .release.Name }}-pvc
