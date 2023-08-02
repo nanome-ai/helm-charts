@@ -44,6 +44,13 @@ spec:
             value: "{{ .values.HTTPS }}"
           - name: BASE_URL
             value: "{{ .values.BASE_URL }}"
+        volumeMounts:
+        - name: vol
+          mountPath: /go/src/app/quickdrop.db
+    volumes:
+      - name: vol
+        persistentVolumeClaim:
+          claimName: {{ $chart_name }}-{{ .release.Name }}-pvc
 ---
 
 {{- end -}}
