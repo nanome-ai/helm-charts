@@ -46,7 +46,7 @@ spec:
             value: "{{ .values.BASE_URL }}"
         volumeMounts:
         - name: vol
-          mountPath: /go/src/app/quickdrop.db
+          mountPath: /quickdrop.db
       volumes:
       - name: vol
         persistentVolumeClaim:
