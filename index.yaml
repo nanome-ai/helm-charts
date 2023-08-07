@@ -1472,6 +1472,21 @@ entries:
   quickdrop:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-08-07T18:03:27.084412599Z"
+    description: Drag and Drop Files into your Nanome Session.
+    digest: d4496b5e8fb249f26600b2b1ab9dfeae9b0016f27cfd0155c7a26a4fed41e434
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    - email: alex@nanome.ai
+      name: ajm13
+    name: quickdrop
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/quickdrop-0.1.5/quickdrop-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
+    appVersion: latest
     created: "2023-08-07T14:57:31.086506541Z"
     description: Drag and Drop Files into your Nanome Session.
     digest: 0d7b94d4af3158c82d3df4cb7ee5d3067b31d0cccb06a4198af6f9dcb72227a7
@@ -2484,4 +2499,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-08-07T14:57:31.087021547Z"
+generated: "2023-08-07T18:03:27.084778405Z"
