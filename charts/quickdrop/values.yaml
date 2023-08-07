@@ -7,3 +7,4 @@ FILES_DIR: "files"
 HTTPS: false
 BASE_URL: "127.0.0.1"
 PVC_STORAGE: 16Gi
+DATABASE_PATH: /db/quickdrop.db

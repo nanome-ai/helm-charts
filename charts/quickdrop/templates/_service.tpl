@@ -14,7 +14,7 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: {{ .values.PORT}}
+      targetPort: {{ .values.PORT }}
       name: http
   selector:
     app: {{ .chart.Name}}

@@ -44,9 +44,11 @@ spec:
             value: "{{ .values.HTTPS }}"
           - name: BASE_URL
             value: "{{ .values.BASE_URL }}"
+          - name: DATABASE_PATH
+            value: "{{ .values.DATABASE_PATH }}"
         volumeMounts:
         - name: vol
-          mountPath: /
+          mountPath: {{ template "getDir" .values.DATABASE_PATH }}
       volumes:
       - name: vol
         persistentVolumeClaim:
