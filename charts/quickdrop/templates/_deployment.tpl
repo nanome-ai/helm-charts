@@ -48,7 +48,7 @@ spec:
             value: "{{ .values.DATABASE_PATH }}"
         volumeMounts:
         - name: vol
-          mountPath: {{ template "getDir" .values.DATABASE_PATH }}
+          mountPath: {{ .values.VOLUME_MOUNT_PATH }}
       volumes:
       - name: vol
         persistentVolumeClaim:
