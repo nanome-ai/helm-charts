@@ -12,12 +12,12 @@ metadata:
 spec:
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
+      port: {{ .values.server.HTTP_PORT }}
+      targetPort: {{ .values.server.HTTP_PORT }}
       name: http
     - protocol: TCP
-      port: 443
-      targetPort: 443
+      port: {{ .values.server.HTTPS_PORT }}
+      targetPort: {{ .values.server.HTTPS_PORT }}
       name: https
   selector:
     app: {{ .chart.Name}}
