@@ -66,7 +66,7 @@ spec:
       - name: vault-server
         image: {{ $server_image }}:{{ $server_tag }}
         ports:
-        - containerPort: {{ .values.server.HTTPS_PORT }}
+        - containerPort: {{ .values.server.HTTP_PORT }}
         - containerPort: {{ .values.server.HTTPS_PORT }}
         resources:
           requests:
