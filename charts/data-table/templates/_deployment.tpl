@@ -60,8 +60,8 @@ spec:
       - name: data-table-server
         image: {{ $server_image }}:{{ $server_tag }}
         ports:
-        - containerPort: 80
-        - containerPort: 443
+        - containerPort: {{.values.server.http_port}}
+        - containerPort: {{.values.server.https_port}}
         resources:
           requests:
             memory: "80Mi"
@@ -69,6 +69,11 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1000m"
+        env:
+        - name: HTTP_PORT
+          value: "{{ .values.server.HTTP_PORT }}"
+        - name: HTTPS_PORT
+          value: "{{ .values.server.HTTPS_PORT }}"
 ---
 
 {{- end -}}
