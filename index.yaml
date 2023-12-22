@@ -610,6 +610,19 @@ entries:
   data-table:
   - apiVersion: v2
     appVersion: latest
+    created: "2023-12-22T17:05:28.713646874Z"
+    description: A Nanome plugin to view multi-frame structure metadata in a table
+    digest: fd1727b87358457f058b52b03333997940e2e7ae15bf9f5839cd771f4f6e48f5
+    maintainers:
+    - email: mike.rosengrant@nanome.ai
+      name: mjrosengrant
+    name: data-table
+    type: application
+    urls:
+    - https://github.com/nanome-ai/helm-charts/releases/download/data-table-0.4.7/data-table-0.4.7.tgz
+    version: 0.4.7
+  - apiVersion: v2
+    appVersion: latest
     created: "2023-12-19T22:55:46.942944931Z"
     description: A Nanome plugin to view multi-frame structure metadata in a table
     digest: f1b75ebbd558c342a1e66028f089b38d611617b40e5d4787f571fb0b95a65322
@@ -2541,4 +2554,4 @@ entries:
     urls:
     - https://github.com/nanome-ai/helm-charts/releases/download/vault-0.1.0/vault-0.1.0.tgz
     version: 0.1.0
-generated: "2023-12-19T22:55:47.091506763Z"
+generated: "2023-12-22T17:05:28.714023235Z"
